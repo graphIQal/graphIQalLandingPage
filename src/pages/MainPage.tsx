@@ -1,3 +1,4 @@
+import { Divider } from '@chakra-ui/react';
 import React from 'react';
 import Navbar from '../components/Navbar';
 import ConnectionSection from './sections/ConnectionSection';
@@ -8,10 +9,12 @@ import HeaderSection from './sections/HeaderSection';
 
 const MainPage: React.FC = () => {
 	return (
-		<div>
+		<div className='w-full'>
 			<Navbar />
 			<HeaderSection />
+			<Divider />
 			<ConnectionSection />
+			<Divider />
 			<CreativeProcessSection />
 		</div>
 	);

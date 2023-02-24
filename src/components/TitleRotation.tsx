@@ -13,6 +13,8 @@ const TitleRotation: React.FC = () => {
 		'docs',
 	];
 
+	const colours = ['#'];
+
 	const [wordIndex, setWordIndex] = useState(2);
 
 	useEffect(() => {
