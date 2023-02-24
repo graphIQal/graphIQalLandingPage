@@ -1,0 +1,15 @@
+.animation {
+  animation: 3s linear 1s slidein;
+}
+
+@keyframes slidein {
+  from {
+    right: -100;
+    width: 100%;
+  }
+
+  to {
+    right: 0;
+    width: 100%;
+  }
+}
