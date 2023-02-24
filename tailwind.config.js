@@ -8,8 +8,10 @@ module.exports = {
     },
 
     extend: {
-      base_black: '#424245',
-      base_white: 'rgba(255,255,255,0.9)',
+      colors: {
+        base_black: '#424245',
+        base_white: 'rgba(255,255,255,0.9)',
+      },
     },
   },
   plugins: [],
