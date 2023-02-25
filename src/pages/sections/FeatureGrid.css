@@ -1,6 +1,6 @@
 :root {
-    --bg-color: rgb(20, 20, 20);
-    --card-color: rgb(23, 23, 23);
+    --bg-color: #f6f5f4;
+    --card-color: rgb(255, 255, 255);
   }
   
   .cards-body {
@@ -27,7 +27,7 @@
   }
   
   .card {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     cursor: pointer;
     display: flex;
@@ -57,7 +57,9 @@
   .card::before {
     background: radial-gradient(
       800px circle at var(--mouse-x) var(--mouse-y), 
-      rgba(255, 255, 255, 0.06),
+      /* rgba(0, 0, 0, 0.10), */
+      rgb(127, 255, 212, 0.2),
+      rgb(146, 111, 216, 0.2),
       transparent 40%
     );
     z-index: 3;
@@ -66,9 +68,9 @@
   .card::after {  
     background: radial-gradient(
       600px circle at var(--mouse-x) var(--mouse-y), 
-      rgba(255, 255, 255, 0.4),
-      /* aquamarine,
-      mediumpurple, */
+      /* rgba(255, 255, 255, 0.4), */
+      aquamarine,
+      mediumpurple,
       /* linear-gradient(to right, aquamarine, mediumpurple), */
       transparent 40%
     );
@@ -85,6 +87,8 @@
     padding: 10px;
     position: absolute;
     z-index: 2;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
   }
   
   /* -- ↓ ↓ ↓ extra card content styles ↓ ↓ ↓ -- */
@@ -132,7 +136,7 @@
     height: 20px;
     line-height: 20px;
   }
-  
+/*   
   .card-info-title > h3 {
     font-size: 1.1em;
     line-height: 20px;
@@ -143,7 +147,7 @@
     font-size: 0.85em;
     margin-top: 8px;
   }
-  
+   */
   /* -- ↓ ↓ ↓ some responsiveness ↓ ↓ ↓ -- */
   
   @media(max-width: 1000px) {
