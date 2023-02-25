@@ -5,7 +5,7 @@ import NavItem from './Navbar/NavItem';
 
 const Navbar: React.FC = () => {
 	return (
-		<div className='flex w-full flex-row justify-between justify-items-stretch px-4 border-b border-gray-200 fixed'>
+		<div className='flex w-full flex-row justify-between justify-items-stretch px-4 border-b border-gray-200 fixed z-10'>
 			<div className='flex flex-row justify-items-stretch align-middle py-4 '>
 				<span className='self-center text-xl font-semibold whitespace-nowrap text-w px-6'>
 					graphIQal

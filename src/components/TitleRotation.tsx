@@ -13,16 +13,23 @@ const TitleRotation: React.FC = () => {
 		'docs',
 	];
 
-	const colours = ['#'];
+	const colours = [
+		'#e5989b',
+		'#ef476f',
+		'#ffd166',
+		'#90be6d',
+		'#43aa8b',
+		'#118ab2',
+		'#b5e48c',
+	];
 
 	const [wordIndex, setWordIndex] = useState(2);
 
 	useEffect(() => {
 		const interval = setInterval(() => {
-			console.log('hmm');
 			animate(wordIndex);
 			setWordIndex((n) => wrapDown(n));
-		}, 5000);
+		}, 3000);
 
 		return () => {
 			clearInterval(interval);
@@ -63,15 +70,15 @@ const TitleRotation: React.FC = () => {
 
 	const animate = (index: number): string => {
 		if (calculateDifference(index) > 1) {
-			return 'absolute -translate-y-14 opacity-0';
+			return 'scale-0 absolute -translate-y-14 opacity-0';
 		} else if (calculateDifference(index) === 1) {
-			return 'text-3xl absolute -translate-y-10 opacity-80';
+			return 'scale-50 absolute -translate-y-10 opacity-80';
 		} else if (calculateDifference(index) === 0) {
-			return 'text-5xl ';
+			return 'scale-100 ';
 		} else if (calculateDifference(index) === -1) {
-			return 'text-3xl absolute translate-y-12 opacity-80';
+			return 'scale-50 absolute translate-y-12 opacity-80';
 		} else {
-			return 'absolute translate-y-14 opacity-0';
+			return 'scale-0 absolute translate-y-14 opacity-0';
 		}
 	};
 
@@ -80,8 +87,10 @@ const TitleRotation: React.FC = () => {
 			{/* <div className='-translate-y-20'>{wordIndex}</div> */}
 			{words.map((value, index) => (
 				<div
+					style={{ color: colours[index % colours.length] }}
 					className={
-						'w-60 transition-transform top-0 ' + animate(index)
+						'w-60 transition duration-700 ease-in top-0 ' +
+						animate(index)
 					}
 				>
 					{words[index]}
