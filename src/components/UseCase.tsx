@@ -6,7 +6,7 @@ import {
   TabPanels,
   Tabs,
 } from '@chakra-ui/react';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { CustomTabs } from './CustomTabs';
 import { Example } from './Example';
 import { HoveringCard } from './HoveringCard';
@@ -19,27 +19,40 @@ const UseCase: React.FC<{ title: string; examples: string[] }> = ({
   examples,
 }) => {
   const [selected, setSelected] = useState(0);
+  const [translation, setTranslation] = useState('translate-x-0');
+
+  useEffect(() => {
+    setTranslation('translate-x-[150%]');
+    setTimeout(() => {
+      setTranslation('translate-x-0');
+    }, 700);
+  }, [selected]);
+
+  const className = 'h-auto w-[1700px] drop-shadow-xl ';
   const tabs = [
     {
       title: 'For Writers',
-      img: <img src={FigmaExample} />,
+      img: <img className={className} src={FigmaExample} />,
       description: 'Description of first use case',
     },
     {
       title: 'For Researchers',
-      img: <img src={FigmaExample} />,
+      img: <img className={className} src={FigmaExample} />,
       description: 'Description of second use case',
     },
   ];
   return (
-    <div className='text-left flex flex-row py-container'>
+    <div className='text-left flex flex-row p-container relative  rounded-md'>
       <SidePanel
         selected={selected}
         setSelected={setSelected}
         tabs={tabs}
         title={title}
       />
-      <HoveringCard text={tabs[selected].description} />
+      {/* <HoveringCard
+        translation={translation}
+        text={tabs[selected].description}
+      /> */}
       {/* <Tabs variant='enclosed'>
         <TabList>
           {examples.map((example, i) => (
@@ -57,7 +70,7 @@ const UseCase: React.FC<{ title: string; examples: string[] }> = ({
           </TabPanel>
         </TabPanels>
       </Tabs> */}
-      <div>
+      <div className='w-0.6 h-auto'>
         {/* <CustomTabs selected={false} text='' /> */}
         <Example img={tabs[selected].img} />
       </div>

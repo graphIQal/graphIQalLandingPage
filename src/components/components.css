@@ -1,5 +1,8 @@
 .animation {
-  animation: 3s linear 1s slidein;
+  position: absolute;
+  right: 0;
+  @apply h-32;
+  animation: 3s ease-in 1s slidein;
 }
 
 @keyframes slidein {
@@ -12,4 +15,11 @@
     right: 0;
     width: 100%;
   }
+}
+
+.letter {
+  display: inline-block;
+  transition: transform 350ms ease;
+  transition-duration: 800ms;
+  @apply text-center;
 }
