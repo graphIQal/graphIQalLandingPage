@@ -9,8 +9,6 @@ const HeaderSection: React.FC = () => {
 
 		window.onpointermove = (event) => {
 			const { clientX, clientY } = event;
-
-			console.log(clientX, clientY, blob);
 			blob?.animate(
 				{
 					left: `${clientX}px`,
@@ -27,12 +25,12 @@ const HeaderSection: React.FC = () => {
 			<div id='blur'></div>
 
 			<div className='flex-col flex items-center justify-items-center w-full z-10'>
-				<div className='h1 flex-1 align-middle items-center w-fit'>
-					<div className='flex flex-row text-5xl font-bold align-middle items-center justify-center mb-10'>
+				<div className='h1 flex-1 align-middle items-center w-fit text-5xl font-bold'>
+					<div className='flex flex-row  align-middle items-center justify-center mb-10'>
 						<span className='self-center'>Your</span>
 						<TitleRotation /> doesn’t
 					</div>
-					<div className='text-5xl font-bold align-middle mb-10 justify-between flex flex-row'>
+					<div className=' align-middle mb-10 justify-between flex flex-row'>
 						<div>fit</div> <div>in</div> <div>files</div>{' '}
 						<div>&</div>
 						<div>folders</div>
@@ -43,6 +41,7 @@ const HeaderSection: React.FC = () => {
 					because it's treated how it is in your brain - flexible and
 					interconnected.
 				</div>
+				<div> </div>
 				<div className='flex-1 w-fit'>
 					<button
 						type='button'
