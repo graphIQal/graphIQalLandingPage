@@ -1,11 +1,36 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import NavItem from './Navbar/NavItem';
 
 // TypeScript users only add this code
 
 const Navbar: React.FC = () => {
+	useEffect(() => {
+		window.onscroll = (event) => {
+			const navbar = document.getElementById('navbar');
+			if (
+				document.body.scrollTop > 20 ||
+				document.documentElement.scrollTop > 20
+			) {
+				navbar?.classList.remove('bg-transparent');
+				navbar?.classList.add('bg-white');
+				navbar?.classList.add('border-b');
+				navbar?.classList.add('border-gray');
+			} else {
+				navbar?.classList.remove('bg-white');
+				navbar?.classList.remove('border-b');
+				navbar?.classList.remove('border-gray');
+				navbar?.classList.add('bg-transparent');
+			}
+		};
+	});
+
 	return (
-		<div className='bg-white flex w-full flex-row justify-between justify-items-stretch px-4 border-b border-gray fixed z-20'>
+		<div
+			id='navbar'
+			className={
+				'transition-all ease-in flex w-full flex-row justify-between justify-items-stretch px-4 border-b border-gray fixed z-20'
+			}
+		>
 			<div className='flex flex-row justify-items-stretch align-middle py-4'>
 				<a
 					href='#'

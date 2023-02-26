@@ -40,7 +40,7 @@ const HeaderSection: React.FC = () => {
 	);
 
 	return (
-		<div className='h-screen w-screen w-min-screen flex items-center justify-items-center'>
+		<div className='h-screen w-screen w-min-screen flex flex-col'>
 			<div id='blob'></div>
 			<div id='blur'></div>
 			<div className='z-0 absolute h-screen w-screen'>
@@ -138,10 +138,10 @@ const HeaderSection: React.FC = () => {
 					}}
 				/>
 			</div>
-
-			<div className='flex-col flex items-center justify-items-center w-full z-10'>
-				<div className='h1 flex-1 align-middle items-center w-fit text-5xl font-bold'>
-					<div className='flex flex-row  align-middle items-center justify-center mb-10'>
+			<div className='flex-col flex items-center h-full w-full z-10 justify-start'>
+				<div className='h-1/5'></div>
+				<div className='h1 align-middle w-fit text-6xl font-extrabold'>
+					<div className='flex flex-row align-middle items-center justify-center mb-10'>
 						<span className='self-center'>Your</span>
 						<TitleRotation /> doesn’t
 					</div>
@@ -154,13 +154,12 @@ const HeaderSection: React.FC = () => {
 						fit in files & folders
 					</div>
 				</div>
-				<div className='flex-1 w-1/2 mb-10'>
+				<div className='w-1/2 mb-10'>
 					Graphiqal is where information is translated into great work
 					because it's treated how it is in your brain - flexible and
 					interconnected.
 				</div>
-				<div> </div>
-				<div className='flex-1 w-fit'>
+				<div className='w-fit'>
 					<button
 						type='button'
 						className='py-3 px-10 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm .5 text-center mr-3 '
