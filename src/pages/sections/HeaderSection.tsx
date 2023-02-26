@@ -4,6 +4,8 @@ import Particles from 'react-particles';
 import type { Container, Engine } from 'tsparticles-engine';
 import { loadFull } from 'tsparticles';
 import { particleSettings } from '../../components/Particles.js/particleSettings';
+import { Example } from '../../components/Example';
+import FigmaExample from '../../assets/images/FigmaExample.png';
 
 // TypeScript users only add this code
 
@@ -40,7 +42,7 @@ const HeaderSection: React.FC = () => {
 	);
 
 	return (
-		<div className='h-screen w-screen w-min-screen flex flex-col'>
+		<div className='h-screen w-screen w-min-screen flex flex-col overflow-x-hidden'>
 			<div id='blob'></div>
 			<div id='blur'></div>
 			<div className='z-0 absolute h-screen w-screen'>
@@ -166,6 +168,17 @@ const HeaderSection: React.FC = () => {
 					>
 						Get graphIQal free
 					</button>
+				</div>
+				<div className='w-full mx-auto h-auto mt-10'>
+					{/* <CustomTabs selected={false} text='' /> */}
+					<div className='absolute w-full mb'>
+						<img
+							className={
+								'mx-auto h-auto w-3/4 drop-shadow-xl rounded'
+							}
+							src={FigmaExample}
+						/>
+					</div>
 				</div>
 			</div>
 		</div>
