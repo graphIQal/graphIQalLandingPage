@@ -43,6 +43,9 @@ body {
   backdrop-filter: blur(12vmax);
 }
 
+#tsparticles {
+  height: 100vh;
+}
 
 /* Default */
 .App {
