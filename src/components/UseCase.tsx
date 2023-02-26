@@ -11,12 +11,12 @@ import { CustomTabs } from './CustomTabs';
 import { Example } from './Example';
 import { HoveringCard } from './HoveringCard';
 import { SidePanel } from './SidePanel';
-import FigmaExample from '../assets/images/FigmaExample.png';
 import './components.css';
 
-const UseCase: React.FC<{ title: string; examples: string[] }> = ({
+const UseCase: React.FC<{ title: string; tabs: any; description: string }> = ({
   title,
-  examples,
+  tabs,
+  description,
 }) => {
   const [selected, setSelected] = useState(0);
   const [translation, setTranslation] = useState('translate-x-0');
@@ -28,22 +28,10 @@ const UseCase: React.FC<{ title: string; examples: string[] }> = ({
     }, 700);
   }, [selected]);
 
-  const className = 'h-auto w-[1700px] drop-shadow-xl ';
-  const tabs = [
-    {
-      title: 'For Writers',
-      img: <img className={className} src={FigmaExample} />,
-      description: 'Description of first use case',
-    },
-    {
-      title: 'For Researchers',
-      img: <img className={className} src={FigmaExample} />,
-      description: 'Description of second use case',
-    },
-  ];
   return (
     <div className='text-left flex flex-row p-container relative  rounded-md'>
       <SidePanel
+        description={description}
         selected={selected}
         setSelected={setSelected}
         tabs={tabs}

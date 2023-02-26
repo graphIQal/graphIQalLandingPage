@@ -6,28 +6,29 @@ export const SidePanel: React.FC<{
   tabs: any;
   selected: number;
   setSelected: (val: number) => void;
-}> = ({ title, tabs, selected, setSelected }) => {
+  description: string;
+}> = ({ title, tabs, selected, setSelected, description }) => {
   const [width, setWidth] = useState(['w-64', 'w-64']);
 
   useEffect(() => {
-    setWidth(['w-64', 'w-64']);
-    let newWidths: string[] = Array(width.length).fill('w-64');
-    newWidths[selected] = 'w-80';
+    setWidth(['w-52', 'w-52']);
+    let newWidths: string[] = Array(width.length).fill('w-52');
+    newWidths[selected] = 'w-64';
     setWidth(newWidths);
   }, [selected]);
   return (
-    <div className='cursor-pointer relative h-container p-container rounded-md flex flex-col space-y-5'>
-      <Heading as='h3' size='lg'>
-        {title}
-      </Heading>
-      <p className='text-body'>
-        Make connections between your information and keep it all in one place
-      </p>
-      <div>
+    <div className='cursor-pointer relative h-container p-container rounded-md flex flex-col space-y-5 w-[80%]'>
+      <div className='w-[80%] space-y-5'>
+        <Heading as='h3' size='lg'>
+          {title}
+        </Heading>
+        <p className='text-body'>{description}</p>
+      </div>
+      {/* <div>
         <p className='text-body transition-transform'>
           {tabs[selected].description}
         </p>
-      </div>
+      </div> */}
       <div className='absolute bottom-0 right-0 flex flex-col align-bottom items-end'>
         {tabs.map((tab: any, i: number) => (
           <div
@@ -39,14 +40,15 @@ export const SidePanel: React.FC<{
               ' transition-all ease-in'
             }
           >
-            <Heading
-              color={selected === i ? 'white' : 'black'}
+            <p
               key={i}
-              size='md'
-              fontWeight={'normal'}
+              className={
+                'text-body font-bold text-' +
+                (selected === i ? 'white' : 'black')
+              }
             >
               {tab.title}
-            </Heading>
+            </p>
           </div>
         ))}
         {/* <div className='bg-selected_white h-52 rounded-md flex align-center items-center justify-center'>

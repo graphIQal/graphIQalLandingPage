@@ -7,12 +7,12 @@ const CreativeProcessSection: React.FC = () => {
   return (
     <div>
       CreativeProcessSection
-      <UseCase
+      {/* <UseCase
         title='Visual Representation'
         examples={['Research', 'Writers']}
       />
       <UseCase title='Transforming Information' examples={['Example']} />
-      <UseCase title='Document' examples={['Example']} />
+      <UseCase title='Document' examples={['Example']} /> */}
     </div>
   );
 };
