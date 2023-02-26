@@ -4,59 +4,55 @@ import NavItem from './Navbar/NavItem';
 // TypeScript users only add this code
 
 const Navbar: React.FC = () => {
-  return (
-    <div
-      className='flex w-full flex-row justify-between justify-items-stretch px-4  fixed z-10 bg-white'
-      //   style={{ backgroundColor: '#2F3C7E' }}
-    >
-      <div className='flex flex-row justify-items-stretch align-middle py-4 '>
-        <span className='self-center text-xl font-bold whitespace-nowrap text-w px-6'>
-          graphIQal
-        </span>
-        <a
-          href='#'
-          className='block flex-auto  pl-3 pr-4 py-2 font-semibold hover:bg-selected_white'
-          aria-current='page'
-        >
-          Home
-        </a>
+	return (
+		<div className='flex w-full flex-row justify-between justify-items-stretch px-4 border-b border-gray-200 fixed z-10'>
+			<div className='flex flex-row justify-items-stretch align-middle py-4 '>
+				<a
+					href='#'
+					className='block flex-auto  pl-3 pr-4 py-2'
+					aria-current='page'
+				>
+					<span className='self-center text-xl font-semibold whitespace-nowrap text-w px-6'>
+						graphIQal
+					</span>
+				</a>
 
-        <a
-          href='#'
-          className='block flex-auto  pl-3 pr-4 py-2 text-gray-700 rounded hover:text-black font-semibold hover:bg-selected_white'
-        >
-          The Science
-        </a>
+				<a
+					href='#'
+					className='block flex-auto  pl-3 pr-4 py-2 text-gray-700 rounded hover:text-black font-semibold hover:bg-selected_white'
+				>
+					The Science
+				</a>
 
-        <a
-          href='#'
-          className='block flex-auto  pl-3 pr-4 py-2 text-gray-700 rounded hover:text-black font-semibold hover:bg-selected_white'
-        >
-          Pricing
-        </a>
-      </div>
-      <div className='flex flex-row justify-items-stretch align-middle py-4'>
-        <a
-          href='#'
-          className='block flex-auto  pl-3 pr-4 py-2 text-gray-700 rounded hover:text-black font-semibold hover:bg-selected_white'
-        >
-          Our Blog
-        </a>
-        <a
-          href='#'
-          className='block flex-auto mr-5 pl-3 pr-4 py-2 text-gray-700 rounded hover:text-black font-semibold hover:bg-selected_white'
-        >
-          Contact Us
-        </a>
-        <button
-          type='button'
-          className='text-white bg-[#2F3C7E] hover:bg-[#1B234B] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-md text-md px-5 .5 text-center mr-3 '
-        >
-          Get graphIQal
-        </button>
-      </div>
-    </div>
-  );
+				<a
+					href='#'
+					className='block flex-auto  pl-3 pr-4 py-2 text-gray-700 rounded hover:text-black font-semibold hover:bg-selected_white'
+				>
+					Pricing
+				</a>
+			</div>
+			<div className='flex flex-row justify-items-stretch align-middle py-4'>
+				<a
+					href='#'
+					className='block flex-auto  pl-3 pr-4 py-2 text-gray-700 rounded hover:text-black font-semibold hover:bg-selected_white'
+				>
+					Our Blog
+				</a>
+				<a
+					href='#'
+					className='block flex-auto mr-5 pl-3 pr-4 py-2 text-gray-700 rounded hover:text-black font-semibold hover:bg-selected_white'
+				>
+					Contact Us
+				</a>
+				<button
+					type='button'
+					className='text-white bg-[#2F3C7E] hover:bg-[#1B234B] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-md text-md px-5 .5 text-center mr-3 '
+				>
+					Get graphIQal
+				</button>
+			</div>
+		</div>
+	);
 };
 
 export default Navbar;
