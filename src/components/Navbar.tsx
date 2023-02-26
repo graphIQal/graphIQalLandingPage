@@ -5,8 +5,8 @@ import NavItem from './Navbar/NavItem';
 
 const Navbar: React.FC = () => {
 	return (
-		<div className='flex w-full flex-row justify-between justify-items-stretch px-4 border-b border-gray-200 fixed z-10'>
-			<div className='flex flex-row justify-items-stretch align-middle py-4 '>
+		<div className='bg-white flex w-full flex-row justify-between justify-items-stretch px-4 border-b border-gray fixed z-20'>
+			<div className='flex flex-row justify-items-stretch align-middle py-4'>
 				<a
 					href='#'
 					className='block flex-auto  pl-3 pr-4 py-2'

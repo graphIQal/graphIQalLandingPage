@@ -14,13 +14,13 @@ const TitleRotation: React.FC = () => {
 	];
 
 	const colours = [
-		'#e5989b',
-		'#ef476f',
-		'#ffd166',
-		'#90be6d',
-		'#43aa8b',
-		'#118ab2',
-		'#b5e48c',
+		'#d90429',
+		'#e76f51',
+		'#006466',
+		'#144552',
+		'#212f45',
+		'#312244',
+		'#4d194d',
 	];
 
 	const [wordIndex, setWordIndex] = useState(2);

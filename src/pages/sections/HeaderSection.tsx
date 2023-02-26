@@ -43,7 +43,7 @@ const HeaderSection: React.FC = () => {
 		<div className='h-screen w-screen w-min-screen flex items-center justify-items-center'>
 			<div id='blob'></div>
 			<div id='blur'></div>
-			<div className='z-10 absolute h-screen w-screen'>
+			<div className='z-0 absolute h-screen w-screen'>
 				<Particles
 					id='tsparticles'
 					init={particlesInit}
@@ -96,7 +96,7 @@ const HeaderSection: React.FC = () => {
 								width: 1,
 							},
 							collisions: {
-								enable: true,
+								enable: false,
 							},
 							move: {
 								direction: 'none',
@@ -107,6 +107,15 @@ const HeaderSection: React.FC = () => {
 								random: false,
 								speed: 3,
 								straight: false,
+								// gravity: {
+								// 	enable: true,
+								// },
+								// attract: {
+								// 	enable: true,
+								// 	distance: 10,
+								// 	rotateX: 1,
+								// 	rotateY: 1,
+								// },
 							},
 							number: {
 								density: {
