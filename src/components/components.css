@@ -23,3 +23,27 @@
   transition-duration: 800ms;
   @apply text-center;
 }
+
+.quote::before {
+  content: '"';
+  display: block;
+  font-size: 4rem;
+  left: -5%;
+  top: -5%;
+  position: relative;
+  height: 0;
+  font-family: cursive;
+  opacity: 50%;
+}
+
+.quote::after {
+  content: '"';
+  display: block;
+  font-size: 4rem;
+  position: relative;
+  height: 0;
+  letter-spacing: -1px;
+  font-family: cursive;
+  transform: rotate(180deg);
+  opacity: 50%;
+}
