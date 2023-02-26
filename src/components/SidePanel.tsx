@@ -33,7 +33,7 @@ export const SidePanel: React.FC<{
           <div
             onClick={() => setSelected(i)}
             className={
-              'drop-shadow p-5 h-16 mt-5 rounded-l-md  flex align-center items-center justify-center z-10 ' +
+              'drop-shadow p-5 h-16 mt-5 rounded-l-md  flex align-center items-center justify-center ' +
               (selected === i ? 'bg-base_black ' : 'bg-base_white ') +
               width[i] +
               ' transition-all ease-in'
