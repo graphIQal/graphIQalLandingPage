@@ -47,3 +47,10 @@
   transform: rotate(180deg);
   opacity: 50%;
 }
+
+#face {
+  max-width: 100%;
+  object-fit: contain;
+  @apply rounded-md;
+  @apply drop-shadow-lg;
+}
