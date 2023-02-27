@@ -42,10 +42,10 @@ const HeaderSection: React.FC = () => {
 	);
 
 	return (
-		<div className='h-screen w-screen w-min-screen flex flex-col overflow-x-hidden'>
+		<div className='h-fit w-screen w-min-screen flex flex-col overflow-x-hidden relative'>
 			<div id='blob'></div>
-			<div id='blur'></div>
-			<div className='z-0 absolute h-screen w-screen'>
+			<div id='blur' className='h-full'></div>
+			<div className='z-0 absolute h-full w-screen'>
 				<Particles
 					id='tsparticles'
 					init={particlesInit}
@@ -141,7 +141,7 @@ const HeaderSection: React.FC = () => {
 				/>
 			</div>
 			<div className='flex-col flex items-center h-full w-full z-10 justify-start'>
-				<div className='h-1/5'></div>
+				<div className='h-[20vh]'></div>
 				<div className='h1 align-middle w-fit text-6xl font-extrabold'>
 					<div className='flex flex-row align-middle items-center justify-center mb-10'>
 						<span className='self-center'>Your</span>
@@ -169,12 +169,12 @@ const HeaderSection: React.FC = () => {
 						Get graphIQal free
 					</button>
 				</div>
-				<div className='w-full mx-auto h-auto mt-10'>
+				<div className='w-full mx-auto my-10'>
 					{/* <CustomTabs selected={false} text='' /> */}
-					<div className='absolute w-full mb'>
+					<div className='w-full mb'>
 						<img
 							className={
-								'mx-auto h-auto w-3/4 drop-shadow-xl rounded'
+								'mx-auto h-auto w-2/3 drop-shadow-xl rounded-md'
 							}
 							src={FigmaExample}
 						/>

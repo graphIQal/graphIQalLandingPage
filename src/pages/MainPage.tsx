@@ -11,10 +11,9 @@ import HeaderSection from './sections/HeaderSection';
 
 const MainPage: React.FC = () => {
 	return (
-		<div className='w-full'>
+		<div className=''>
 			<Navbar />
 			<HeaderSection />
-			<Divider />
 			<div className='bg-selected_white'>
 				<ConnectionSection />
 				<Divider />
