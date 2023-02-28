@@ -8,8 +8,9 @@ export default function useOnScreen(ref: RefObject<HTMLElement>) {
 
   const observer = useMemo(
     () =>
-      new IntersectionObserver(([entry]) =>
-        setIntersecting(entry.isIntersecting)
+      new IntersectionObserver(
+        ([entry]) => setIntersecting(entry.isIntersecting),
+        { threshold: 1 }
       ),
     [ref]
   );
@@ -52,10 +53,13 @@ export const Sales: React.FC = () => {
   };
 
   useEffect(() => {
-    if (!isVisible) return;
     for (let i = 3; i <= 5; ++i) {
       enhance('word-' + i);
     }
+  }, []);
+  useEffect(() => {
+    if (!isVisible) return;
+
     setTimeout(() => {
       for (let i = 3; i <= 5; ++i) {
         const letters = document.getElementById('word-' + i)?.childNodes;
@@ -65,7 +69,7 @@ export const Sales: React.FC = () => {
           }
         }
       }
-    }, 1500);
+    }, 1200);
   }, [isVisible]);
 
   return (
@@ -84,7 +88,7 @@ export const Sales: React.FC = () => {
           both those fields at the same time,” Shannon said.”
         </div>
         {/* <div className='w-[60%] text-left space-y-5 p-container bg rounded-md bg-selected_white drop-shadow-lg '> */}
-        <div className='font-semibold text-4xl flex flex-col w-full'>
+        <div className='font-semibold text-4xl flex flex-col w-full letter'>
           <div className='flex flex-col px-container py-5'>
             <div>
               <span className='font-normal'>Leverage </span>
