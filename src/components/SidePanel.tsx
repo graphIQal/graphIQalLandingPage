@@ -17,7 +17,7 @@ export const SidePanel: React.FC<{
     setWidth(newWidths);
   }, [selected]);
   return (
-    <div className='cursor-pointer relative h-container p-container rounded-md flex flex-col space-y-5 w-[80%]'>
+    <div className='cursor-pointer relative h-container p-container rounded-md flex flex-col space-y-5 w-[40%]'>
       <div className='w-[80%] space-y-5'>
         <Heading as='h3' size='lg'>
           {title}

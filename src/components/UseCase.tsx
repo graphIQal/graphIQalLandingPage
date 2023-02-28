@@ -58,7 +58,7 @@ const UseCase: React.FC<{ title: string; tabs: any; description: string }> = ({
           </TabPanel>
         </TabPanels>
       </Tabs> */}
-      <div className='w-0.6 h-auto'>
+      <div className='w-[60%] h-auto'>
         {/* <CustomTabs selected={false} text='' /> */}
         <Example img={tabs[selected].img} />
       </div>

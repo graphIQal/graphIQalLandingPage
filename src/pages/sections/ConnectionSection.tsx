@@ -3,11 +3,12 @@ import React from 'react';
 import UseCase from '../../components/UseCase';
 import ConnectionIcon from '../../assets/images/connection_icon.png';
 import FigmaExample from '../../assets/images/FigmaExample.png';
+import '../../components/components.css';
 
 // TypeScript users only add this code
 
 const ConnectionSection: React.FC = () => {
-  const className = 'h-auto w-[1700px] drop-shadow-xl ';
+  const className = 'face drop-shadow-xl ';
   const tabs = [
     {
       title: 'For Writers',
