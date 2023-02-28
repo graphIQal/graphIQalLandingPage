@@ -5,7 +5,7 @@ import MainPage from './pages/MainPage';
 
 function App() {
 	return (
-		<div className='App overflow-x-hidden'>
+		<div className='App'>
 			<MainPage />
 		</div>
 	);

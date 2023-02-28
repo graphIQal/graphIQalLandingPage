@@ -3,68 +3,83 @@ import React from 'react';
 import UseCase from '../../components/UseCase';
 import ConnectionIcon from '../../assets/images/connection_icon.png';
 import FigmaExample from '../../assets/images/FigmaExample.png';
+import { FaPaintBrush, FaGraduationCap, FaSeedling } from 'react-icons/fa';
+import { BsPenFill } from 'react-icons/bs';
 
 // TypeScript users only add this code
-
+import { GiArchiveResearch } from 'react-icons/gi';
 const ConnectionSection: React.FC = () => {
-  const className = 'h-auto w-[1700px] drop-shadow-xl ';
-  const tabs = [
-    {
-      title: 'For Writers',
-      img: <img className={className} src={FigmaExample} />,
-      description: 'Description of first use case',
-    },
-    {
-      title: 'For Researchers',
-      img: <img className={className} src={FigmaExample} />,
-      description: 'Description of second use case',
-    },
-  ];
-  const tabs2 = [
-    {
-      title: 'For Developers',
-      img: <img className={className} src={FigmaExample} />,
-      description: 'Description of first use case',
-    },
-    {
-      title: 'For Learners',
-      img: <img className={className} src={FigmaExample} />,
-      description: 'Description of first use case',
-    },
-  ];
-  const tabs3 = [
-    {
-      title: 'For Students',
-      img: <img className={className} src={FigmaExample} />,
-      description: 'Description of first use case',
-    },
-  ];
-  return (
-    <div className='p-container flex flex-col bg-selected_white rounded-md m-12 space-y-10'>
-      <div className='m-5 w-0.3  text-center'>
-        {/* <img
-          className='w-16 absolute mt-[-40px] ml-[-40px]'
-          src={ConnectionIcon}
-        /> */}
-        <Heading>Associations and Connections</Heading>
-      </div>
-      <UseCase
-        title='Different views of information, all connected'
-        description='See and edit your information in a graph, a document, organized by time, or however you want. And sync seamlessly between them.'
-        tabs={tabs}
-      />
-      <UseCase
-        title='All information in units, wherever you want it'
-        description='Put information wherever and in however many places you want. Break it down to individual units.'
-        tabs={tabs3}
-      />
-      <UseCase
-        title='No hierarchy. Everything is connected.'
-        description='Make connections between seemingly unrelated information, uncovering new insights.'
-        tabs={tabs2}
-      />
-    </div>
-  );
+	const className =
+		'h-auto w-full drop-shadow-xl rounded-lg border border-lining  min-w-[50vw] min-h-[50vh]';
+	const iconClassName = 'h-full w-full';
+	const tabs = [
+		{
+			title: 'Writers',
+			icon: <BsPenFill className={iconClassName} />,
+			img: <img className={className} src={FigmaExample} />,
+		},
+		{
+			title: 'Researchers',
+			icon: <GiArchiveResearch className={iconClassName} />,
+			img: <img className={className} src={FigmaExample} />,
+		},
+		{
+			title: 'Artists',
+			icon: <FaPaintBrush className={iconClassName} />,
+			img: <img className={className} src={FigmaExample} />,
+		},
+		{
+			title: 'Students',
+			icon: <FaGraduationCap className={iconClassName} />,
+			img: <img className={className} src={FigmaExample} />,
+		},
+		{
+			title: 'Personal',
+			icon: <FaSeedling className={iconClassName} />,
+			img: <img className={className} src={FigmaExample} />,
+		},
+	];
+	const tabs2 = [
+		{
+			title: 'Learners',
+			icon: <BsPenFill className={iconClassName} />,
+			img: <img className={className} src={FigmaExample} />,
+		},
+	];
+	const tabs3 = [
+		{
+			title: 'Students',
+			icon: <FaGraduationCap className={iconClassName} />,
+			img: <img className={className} src={FigmaExample} />,
+		},
+	];
+
+	return (
+		<div className='flex flex-col rounded-md'>
+			<div className='w-0.3 text-center mb-5'>
+				<Heading>Flexible, Interconnected Information</Heading>
+			</div>
+			<div className='space-y-12'>
+				<UseCase
+					title='Perfect visualisation for your information'
+					description='See and edit your information in a graph, a document, organized by time, or however you want. And sync seamlessly between them.'
+					tabs={tabs}
+				/>
+				<UseCase
+					title={
+						'You’re not messy.  organisation for a complex world.'
+					}
+					description='Put information wherever and in however many places you want. Break it down to individual units.'
+					tabs={tabs3}
+				/>
+				<UseCase
+					title='Connections are a first class citizen'
+					description='Make connections between seemingly unrelated information, uncovering new insights.'
+					tabs={tabs2}
+				/>
+			</div>
+		</div>
+	);
 };
 
 export default ConnectionSection;

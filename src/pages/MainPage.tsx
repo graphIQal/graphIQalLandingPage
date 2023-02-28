@@ -14,14 +14,12 @@ const MainPage: React.FC = () => {
 		<div className=''>
 			<Navbar />
 			<HeaderSection />
-			<div className='bg-selected_white'>
-				<ConnectionSection />
-				<Divider />
-				<Sales />
-				<Divider />
-				<CreativeProcessSection />
-				<FeatureGrid />
-			</div>
+			<ConnectionSection />
+			<Divider />
+			<Sales />
+			<Divider />
+			<CreativeProcessSection />
+			<FeatureGrid />
 		</div>
 	);
 };

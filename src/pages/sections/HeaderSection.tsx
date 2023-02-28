@@ -6,6 +6,7 @@ import { loadFull } from 'tsparticles';
 import { particleSettings } from '../../components/Particles.js/particleSettings';
 import { Example } from '../../components/Example';
 import FigmaExample from '../../assets/images/FigmaExample.png';
+import { ArrowForwardIcon } from '@chakra-ui/icons';
 
 // TypeScript users only add this code
 
@@ -152,11 +153,11 @@ const HeaderSection: React.FC = () => {
 						<div>&</div>
 						<div>folders</div>
 					</div> */}
-					<div className='self-center align-middle mb-10 justify-center flex flex-row'>
+					<div className='self-center align-middle mb-3 justify-center flex flex-row'>
 						fit in files & folders
 					</div>
 				</div>
-				<div className='w-1/2 mb-10'>
+				<div className='w-1/2 mb-7 font-semibold'>
 					Graphiqal is where information is translated into great work
 					because it's treated how it is in your brain - flexible and
 					interconnected.
@@ -164,17 +165,17 @@ const HeaderSection: React.FC = () => {
 				<div className='w-fit'>
 					<button
 						type='button'
-						className='py-3 px-10 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm .5 text-center mr-3 '
+						className='py-3 px-10 font-bold text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-sm .5 text-center mr-3 '
 					>
-						Get graphIQal free
+						Get graphIQal free <ArrowForwardIcon />
 					</button>
 				</div>
-				<div className='w-full mx-auto my-10'>
+				<div className='w-full mx-auto my-12'>
 					{/* <CustomTabs selected={false} text='' /> */}
-					<div className='w-full mb'>
+					<div className='w-full mb-3'>
 						<img
 							className={
-								'mx-auto h-auto w-2/3 drop-shadow-xl rounded-md'
+								'mx-auto h-auto w-2/3 drop-shadow-xl rounded-md border border-lining'
 							}
 							src={FigmaExample}
 						/>
