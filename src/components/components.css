@@ -1,3 +1,9 @@
+:root {
+  --base_black: #424245;
+  --base_white: rgba(255, 255, 255, 0.9);
+  --lining: #242425;
+  --selected_white: #f5f6f7;
+}
 .animation {
   position: absolute;
   right: 0;
@@ -44,7 +50,7 @@
   height: 0;
   letter-spacing: -1px;
   font-family: cursive;
-  transform: rotate(180deg);
+  transform: rotate(180deg) translateY(3rem);
   opacity: 50%;
 }
 
@@ -53,4 +59,21 @@
   object-fit: contain;
   @apply rounded-md;
   @apply drop-shadow-lg;
+}
+
+.gradient {
+  background: linear-gradient(var(--base_white), 70%, var(--base_black));
+}
+
+.gradient_line {
+  background: linear-gradient(var(--selected_white), 60%, var(--base_black));
+}
+
+.timeline {
+  margin-left: calc(theme(padding[container]));
+}
+
+.timeline_number {
+  margin-left: calc(-1 * theme(padding[container]) - 1.25rem + 2px);
+  @apply backdrop-blur-md;
 }
