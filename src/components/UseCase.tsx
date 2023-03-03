@@ -30,7 +30,7 @@ const UseCase: React.FC<{ title: string; tabs: any; description: string }> = ({
 
 	return (
 		<div className='flex flex-row-reverse flex-nowrap overflow-x-hidden relative rounded-md mb-14 text-left w-full h-fit'>
-			<div className='basis-5/12'>
+			<div className='basis-5/12 mr-[3%] my-10 mx-10'>
 				<SidePanel
 					description={description}
 					selected={selected}
@@ -43,7 +43,7 @@ const UseCase: React.FC<{ title: string; tabs: any; description: string }> = ({
 				className='basis-7/12 overflow-x-hidden overflow-y-visible'
 				style={{ direction: 'rtl' }}
 			>
-				<div className='w-full flex justify-center align-center items-center flex-col z-0 my-10 mx-10'>
+				<div className='w-full flex justify-start align-center z-0 my-10 mx-10'>
 					{tabs[selected].img}
 				</div>
 			</div>

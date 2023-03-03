@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { colours } from '../assets/Colours';
 
 // TypeScript users only add this code
 
@@ -11,16 +12,6 @@ const TitleRotation: React.FC = () => {
 		'product',
 		'wiki',
 		'docs',
-	];
-
-	const colours = [
-		'#e5989b',
-		'#ef476f',
-		'#ffd166',
-		'#90be6d',
-		'#43aa8b',
-		'#118ab2',
-		'#b5e48c',
 	];
 
 	const [wordIndex, setWordIndex] = useState(2);

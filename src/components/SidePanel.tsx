@@ -1,5 +1,6 @@
 import { Heading } from '@chakra-ui/react';
 import React, { useEffect, useState } from 'react';
+import { colours } from '../assets/Colours';
 
 export const SidePanel: React.FC<{
 	title: string;
@@ -18,7 +19,7 @@ export const SidePanel: React.FC<{
 	}, [selected]);
 
 	return (
-		<div className=' relative h-container p-container rounded-md flex flex-col space-y-5'>
+		<div className=' relative rounded-md flex flex-col space-y-5'>
 			<div className='w-[80%] space-y-5'>
 				<Heading as='h3' size='lg'>
 					{title}
@@ -32,17 +33,23 @@ export const SidePanel: React.FC<{
 						className={
 							'border-selected_white p-5 h-32 w-32 mt-3 mr-3 rounded-md flex align-center items-center justify-end cursor-pointer transition-all ease-in flex-col ' +
 							(selected === i
-								? 'bg-white border-2 drop-shadow'
+								? 'bg-white border-2 drop-shadow '
 								: 'bg-selected_white border-2')
 						}
 					>
-						<div className='grow p-3'>{tab.icon}</div>
+						<div
+							className={'grow p-3 text-[' + colours[i] + '] '}
+							// style={{ color: selected === i ? colours[i] : '' }}
+						>
+							{tab.icon}
+						</div>
 						<p
 							key={i}
 							className={
-								'grow-0 h-fit font-bold text-' +
-								(selected === i ? 'base_white ' : 'black ')
+								'grow-0 h-fit font-bold text-'
+								// +  (selected === i ? 'base_white ' : 'black ')
 							}
+							// style={{ color: selected === i ? colours[i] : '' }}
 						>
 							{tab.title}
 						</p>

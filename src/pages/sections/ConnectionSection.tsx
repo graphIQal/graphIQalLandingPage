@@ -10,7 +10,7 @@ import { BsPenFill } from 'react-icons/bs';
 import { GiArchiveResearch } from 'react-icons/gi';
 const ConnectionSection: React.FC = () => {
 	const className =
-		'h-auto w-full drop-shadow-xl rounded-lg border border-lining  min-w-[50vw] min-h-[50vh]';
+		'drop-shadow-xl rounded-lg border border-lining max-h-[65vh] w-auto h-auto';
 	const iconClassName = 'h-full w-full';
 	const tabs = [
 		{
