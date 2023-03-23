@@ -10,18 +10,18 @@ import HeaderSection from './sections/HeaderSection';
 // TypeScript users only add this code
 
 const MainPage: React.FC = () => {
-	return (
-		<div className=''>
-			<Navbar />
-			<HeaderSection />
-			<ConnectionSection />
-			<Divider />
-			<Sales />
-			<Divider />
-			<CreativeProcessSection />
-			<FeatureGrid />
-		</div>
-	);
+  return (
+    <div className='App'>
+      <Navbar />
+      <HeaderSection />
+      <ConnectionSection />
+      <Divider />
+      <Sales />
+      <Divider />
+      <CreativeProcessSection />
+      <FeatureGrid />
+    </div>
+  );
 };
 
 export default MainPage;

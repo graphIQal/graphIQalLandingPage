@@ -54,3 +54,11 @@
   @apply rounded-md;
   @apply drop-shadow-lg;
 }
+
+#blog_card:hover #square {
+  width: 20rem;
+}
+
+#blog_card:hover #circle {
+  opacity: 100%;
+}
