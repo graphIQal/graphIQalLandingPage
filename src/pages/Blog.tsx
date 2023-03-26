@@ -9,58 +9,59 @@ import Proverbs from '../assets/images/blog/design_proverbs.png';
 import System from '../assets/images/blog/design_system.png';
 import Navbar from '../components/Navbar';
 
+export const blogPosts = [
+  {
+    title: 'The Journey of GraphIQal: Table of Contents',
+    url: 'https://medium.com/@isabelle.ilyia/the-journey-of-graphiqal-table-of-contents-6f98b63dd072',
+    description: '',
+    tags: ['OVERVIEW'],
+    date: '',
+    img: Contents,
+  },
+  {
+    title: 'A Baby GraphIQal, and the 36 Hours That Preceded It',
+    url: 'https://medium.com/better-programming/a-baby-graphiqal-and-the-36-hours-that-preceded-it-8a574f5cac73',
+    description: '',
+    tags: ['HACKATHON'],
+    date: '',
+    img: Hackathon,
+  },
+  {
+    title: 'Our Vision and Competition',
+    url: 'https://medium.com/better-programming/baby-graphiqal-takes-its-first-steps-vision-competition-c94eceb8fc43',
+    description: '',
+    tags: ['PRODUCT'],
+    date: '',
+    img: Vision,
+  },
+  {
+    title: 'Proverbs of UX Design: Building a Design Compass',
+    url: 'https://medium.com/better-programming/proverbs-of-ux-design-building-a-design-compass-542c9608866d',
+    description: '',
+    tags: ['DESIGN'],
+    date: '',
+    img: Proverbs,
+  },
+  {
+    title: 'On consistency without repetition',
+    url: 'https://medium.com/@isabelle.ilyia/on-consistency-without-repetition-6928203d5c40',
+    description: '',
+    tags: ['DESIGN'],
+    date: '',
+    img: System,
+  },
+  {
+    title: 'Building Our Backend House of Cards',
+    url: 'https://medium.com/better-programming/building-our-backend-house-of-cards-5773234f6e0b',
+    description:
+      ' A tech stack is a delicate structure, kind of like a house of cards.',
+    tags: ['BACKEND'],
+    date: 'February 11, 2023',
+    img: Cards,
+  },
+];
+
 const Blog: React.FC = () => {
-  const blogPosts = [
-    {
-      title: 'The Journey of GraphIQal: Table of Contents',
-      url: 'https://medium.com/@isabelle.ilyia/the-journey-of-graphiqal-table-of-contents-6f98b63dd072',
-      description: '',
-      tags: ['OVERVIEW'],
-      date: '',
-      img: Contents,
-    },
-    {
-      title: 'A Baby GraphIQal, and the 36 Hours That Preceded It',
-      url: 'https://medium.com/better-programming/a-baby-graphiqal-and-the-36-hours-that-preceded-it-8a574f5cac73',
-      description: '',
-      tags: ['HACKATHON'],
-      date: '',
-      img: Hackathon,
-    },
-    {
-      title: 'Our Vision and Competition',
-      url: 'https://medium.com/better-programming/baby-graphiqal-takes-its-first-steps-vision-competition-c94eceb8fc43',
-      description: '',
-      tags: ['PRODUCT'],
-      date: '',
-      img: Vision,
-    },
-    {
-      title: 'Proverbs of UX Design: Building a Design Compass',
-      url: 'https://medium.com/better-programming/proverbs-of-ux-design-building-a-design-compass-542c9608866d',
-      description: '',
-      tags: ['DESIGN'],
-      date: '',
-      img: Proverbs,
-    },
-    {
-      title: 'On consistency without repetition',
-      url: 'https://medium.com/@isabelle.ilyia/on-consistency-without-repetition-6928203d5c40',
-      description: '',
-      tags: ['DESIGN'],
-      date: '',
-      img: System,
-    },
-    {
-      title: 'Building Our Backend House of Cards',
-      url: 'https://medium.com/better-programming/building-our-backend-house-of-cards-5773234f6e0b',
-      description:
-        ' A tech stack is a delicate structure, kind of like a house of cards.',
-      tags: ['BACKEND'],
-      date: 'February 11, 2023',
-      img: Cards,
-    },
-  ];
   return (
     <>
       <Navbar />

@@ -25,7 +25,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ post }) => {
       >
         <div
           // style={{ backgroundImage: `url(${NeuralNetwork})` }}
-          className='h-72 w-32 bg-base_black z-5 absolute left-0 transition-all duration-1000 rounded-l-sm'
+          className='h-72 w-32 bg-base_black bg-opacity-50 z-5 absolute left-0 transition-all duration-1000 rounded-l-sm'
           id='square'
         ></div>
         <div

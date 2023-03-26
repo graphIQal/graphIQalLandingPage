@@ -43,12 +43,12 @@ const Navbar: React.FC = () => {
           </span>
         </Link>
 
-        <a
-          href='#'
+        <Link
+          to='/science'
           className='block flex-auto  pl-3 pr-4 py-2 text-gray-700 rounded hover:text-black font-semibold hover:bg-selected_white'
         >
           The Science
-        </a>
+        </Link>
 
         <a
           href='#'
