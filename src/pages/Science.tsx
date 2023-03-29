@@ -1,7 +1,7 @@
 import { Divider, Heading, Text } from '@chakra-ui/react';
 import React from 'react';
 import Navbar from '../components/Navbar';
-import NeuralNetwork from '../assets/images/blog/neural_network.png';
+import NeuralNetwork from '../assets/images/blog/neural_network2.png';
 import BlogCard from '../components/BlogCard';
 import Blog, { blogPosts } from './Blog';
 import { AiOutlineArrowRight } from 'react-icons/ai';
@@ -16,14 +16,14 @@ export const Science: React.FC = () => {
       <div className='w-full h-full p-0'>
         <div
           style={{ backgroundImage: `url(${NeuralNetwork})` }}
-          className='flex mt-14 w-screen h-96 bg-cover bg-no-repeat flex-col justify-center align-start items-center text-left '
+          className='flex mt-14 w-screen h-[30rem] bg-cover bg-no-repeat flex-col justify-center align-start items-center text-left '
         >
-          <div className='h-96 w-full bg-gradient-to-r from-base_black to-base_white opacity-30 absolute'></div>
-          <div className='flex flex-col w-[60%] align-top items-start justify-center space-y-5'>
-            <Heading size='2xl' className='text-base_black z-10'>
+          <div className=' h-[30rem] w-full bg-base_black opacity-70 absolute'></div>
+          <div className='flex flex-col w-[60%] align-top items-start justify-center space-y-10'>
+            <Heading size='2xl' className='text-base_white z-10'>
               The Science Behind graphIQal
             </Heading>
-            <Heading size='lg' className='text-left text-gray-500 z-10'>
+            <Heading size='lg' className='text-left text-gray-400  z-10'>
               Understanding what our brain sees
             </Heading>
           </div>
@@ -125,7 +125,7 @@ export const Science: React.FC = () => {
           perhaps derive from it the ‘chemistry of creativity’*
         </Text>
         <Divider width={'70%'} alignSelf='center' className='my-10' />
-        <div className='w-[70%] text-left px-container'>
+        <div className='text-left px-container'>
           <div className='flex flex-row gap-x-5 align-middle items-center'>
             <Heading size='lg' className='ml-5'>
               Read More
