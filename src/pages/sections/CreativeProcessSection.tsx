@@ -2,66 +2,107 @@ import { Heading } from '@chakra-ui/react';
 import React from 'react';
 import UseCase from '../../components/UseCase';
 import FigmaExample from '../../assets/images/FigmaExample.png';
+import {
+	FaPaintBrush,
+	FaGraduationCap,
+	FaSeedling,
+	FaPodcast,
+} from 'react-icons/fa';
+import { BsPenFill } from 'react-icons/bs';
+import { GiArchiveResearch } from 'react-icons/gi';
+import '../../components/components.css';
+import UseCase2 from '../../components/UseCase2';
 
 // TypeScript users only add this code
 
 const CreativeProcessSection: React.FC = () => {
 	const className = 'h-auto w-[1700px] drop-shadow-xl ';
+	const iconClassName = 'w-full h-full';
 
 	const tabs = [
 		{
-			title: 'For Writers',
+			title: 'Writers',
 			img: <img className={className} src={FigmaExample} />,
-			description: 'Description of first use case',
+			icon: <BsPenFill className={iconClassName} />,
 		},
 		{
-			title: 'For Researchers',
+			title: 'Researchers',
 			img: <img className={className} src={FigmaExample} />,
-			description: 'Description of second use case',
+			icon: <GiArchiveResearch className={iconClassName} />,
 		},
 	];
 	const tabs2 = [
 		{
-			title: 'For Developers',
+			title: 'Students',
 			img: <img className={className} src={FigmaExample} />,
-			description: 'Description of first use case',
+			icon: <FaGraduationCap className={iconClassName} />,
 		},
 		{
-			title: 'For Learners',
+			title: 'Writers',
 			img: <img className={className} src={FigmaExample} />,
-			description: 'Description of first use case',
+			icon: <BsPenFill className={iconClassName} />,
 		},
 	];
 	const tabs3 = [
 		{
-			title: 'For Students',
+			title: 'Researchers',
 			img: <img className={className} src={FigmaExample} />,
-			description: 'Description of first use case',
+			icon: <GiArchiveResearch className={iconClassName} />,
+		},
+		{
+			title: 'Podcasts',
+			img: <img className={className} src={FigmaExample} />,
+			icon: <FaPodcast className={iconClassName} />,
 		},
 	];
+	//   const tabs2 = [
+	//     {
+	//       title: 'For Developers',
+	//       img: <img className={className} src={FigmaExample} />,
+	//       description: 'Description of first use case',
+	//     },
+	//     {
+	//       title: 'For Learners',
+	//       img: <img className={className} src={FigmaExample} />,
+	//       description: 'Description of first use case',
+	//     },
+	//   ];
+	//   const tabs3 = [
+	//     {
+	//       title: 'For Students',
+	//       img: <img className={className} src={FigmaExample} />,
+	//       description: 'Description of first use case',
+	//     },
+	//   ];
 	return (
-		<div className='flex flex-col rounded-md space-y-10'>
+		<div
+			id='creative_processes'
+			className='flex flex-col rounded-md space-y-10 relative px-[15vw]'
+		>
 			<div className='m-5 w-0.3 text-center'>
 				{/* <img
           className='w-16 absolute mt-[-40px] ml-[-40px]'
           src={ConnectionIcon}
         /> */}
-				<Heading>Flexible, Interconnected Information</Heading>
+				<Heading>Elevating the Creative Process</Heading>
 			</div>
-			<UseCase
-				title='Connections are a first class citizen'
-				description='See and edit your information in a graph, a document, organized by time, or however you want. And sync seamlessly between them.'
+			<UseCase2
+				title="Sometimes, it's easiest to just draw"
+				description='See your ideas in your brain’s native language. Materialize your intricate web of thoughts with no friction.'
 				tabs={tabs}
+				index={1}
 			/>
-			<UseCase
-				title={"It's not you. Organsation that makes sense"}
-				description='Put information wherever and in however many places you want. Break it down to individual units.'
-				tabs={tabs3}
-			/>
-			<UseCase
-				title=''
-				description='Make connections between seemingly unrelated information, uncovering new insights.'
+			<UseCase2
+				title={'Develop your ideas under a spotlight'}
+				description='Each idea– each entity of information– is independent. Connect and view them with no limitations.'
 				tabs={tabs2}
+				index={2}
+			/>
+			<UseCase2
+				title='From a web of thoughts to a final product'
+				description='No thoughts and ideas thrown away. From a mind map, to an outline, to a document, transform with no loss of information.'
+				tabs={tabs3}
+				index={3}
 			/>
 		</div>
 	);

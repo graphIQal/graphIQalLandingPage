@@ -1,10 +1,9 @@
 import { Heading } from '@chakra-ui/react';
 import React from 'react';
-import UseCase from '../../components/UseCase';
-import ConnectionIcon from '../../assets/images/connection_icon.png';
-import FigmaExample from '../../assets/images/FigmaExample.png';
-import { FaPaintBrush, FaGraduationCap, FaSeedling } from 'react-icons/fa';
 import { BsPenFill } from 'react-icons/bs';
+import { FaGraduationCap, FaPaintBrush, FaSeedling } from 'react-icons/fa';
+import FigmaExample from '../../assets/images/FigmaExample.png';
+import UseCase from '../../components/UseCase';
 
 // TypeScript users only add this code
 import { GiArchiveResearch } from 'react-icons/gi';

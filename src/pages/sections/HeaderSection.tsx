@@ -1,12 +1,10 @@
-import React, { useCallback, useEffect } from 'react';
-import TitleRotation from '../../components/TitleRotation';
-import Particles from 'react-particles';
-import type { Container, Engine } from 'tsparticles-engine';
-import { loadFull } from 'tsparticles';
-import { particleSettings } from '../../components/Particles.js/particleSettings';
-import { Example } from '../../components/Example';
-import FigmaExample from '../../assets/images/FigmaExample.png';
 import { ArrowForwardIcon } from '@chakra-ui/icons';
+import React, { useCallback, useEffect } from 'react';
+import Particles from 'react-particles';
+import { loadFull } from 'tsparticles';
+import type { Container, Engine } from 'tsparticles-engine';
+import FigmaExample from '../../assets/images/FigmaExample.png';
+import TitleRotation from '../../components/TitleRotation';
 
 // TypeScript users only add this code
 

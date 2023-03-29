@@ -73,19 +73,35 @@ export const Sales: React.FC = () => {
   }, [isVisible]);
 
   return (
-    <div className='flex flex-row w-full p-container'>
+    <div className='flex flex-row w-full p-container items-center'>
       <div
         ref={ref}
-        className='rounded-md w-[90%] text-left p-container flex flex-col space-y-5'
+        className='rounded-md w-[90%] text-left p-container flex flex-col'
       >
         <div className='text-xl p-container  quote italic font-medium'>
           {/* <span className='italic ml-[-5%] text-[3rem] '>"</span> */}
           {/* <br /> */}
-          There he recognized that he could combine telephone call-routing
+          {/* There he recognized that he could combine telephone call-routing
           technology with Boole’s logic system to encode and transmit any type
           of information electronically. It was the fundamental insight on which
           computers rely. “It just happened that no one else was familiar with
-          both those fields at the same time,” Shannon said.”
+          both those fields at the same time,” Shannon said.” */}
+          In an age when alchemy was still a common approach to natural
+          phenomena, Johannes Kepler filled the universe with invisible forces
+          acting all around us, and helped usher in the Scientific Revolution.
+          His fastidious documentation of every meandering path his brain blazed
+          is one of the great records of a mind undergoing creative
+          transformation. It is a truism to say that Kepler thought outside the
+          box. But what he really did, whenever he was stuck, was to think
+          entirely outside the domain.
+          <br />
+          <br />
+          <div className='w-[90%] text-right mr-container pr-container'>
+            <span className='text-right w-full not-italic align-bottom '>
+              – David Epstein,
+            </span>
+            <span className='w-full text-right'> Range</span>
+          </div>
         </div>
         {/* <div className='w-[60%] text-left space-y-5 p-container bg rounded-md bg-selected_white drop-shadow-lg '> */}
         <div className='font-semibold text-4xl flex flex-col w-full letter'>
