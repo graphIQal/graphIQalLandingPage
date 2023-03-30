@@ -4,11 +4,9 @@ import './components.css';
 import About from '../assets/images/about.png';
 
 const UseCase2: React.FC<{
-	title: string;
-	tabs: any;
 	description: string;
-	index: number;
-}> = ({ title, tabs, description, index }) => {
+	// index: number;
+}> = ({ description }) => {
 	return (
 		<div className='text-left flex flex-row p-container relative rounded-md justify-around'>
 			{/* <div className='h-full absolute bg-base_black top-0 left-0 w-1 z-0'></div>
@@ -19,8 +17,8 @@ const UseCase2: React.FC<{
 				{/* <CustomTabs selected={false} text='' /> */}
 				<img src={About} />
 			</div>
-			<div className='relative h-container ml-5 rounded-md flex flex-col space-y-5 w-[50%]'>
-				<p className='text-md'>{description}</p>
+			<div className='relative h-container ml-5 rounded-md flex flex-col space-y-5 w-[50%] whitespace-pre-line text-md'>
+				{description}
 			</div>
 		</div>
 	);

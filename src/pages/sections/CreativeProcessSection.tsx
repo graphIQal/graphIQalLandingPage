@@ -1,79 +1,9 @@
 import { Heading } from '@chakra-ui/react';
 import React from 'react';
-import UseCase from '../../components/UseCase';
-import FigmaExample from '../../assets/images/FigmaExample.png';
-import {
-	FaPaintBrush,
-	FaGraduationCap,
-	FaSeedling,
-	FaPodcast,
-} from 'react-icons/fa';
-import { BsPenFill } from 'react-icons/bs';
-import { GiArchiveResearch } from 'react-icons/gi';
 import '../../components/components.css';
 import UseCase2 from '../../components/UseCase2';
 
-// TypeScript users only add this code
-
 const CreativeProcessSection: React.FC = () => {
-	const className = 'h-auto w-[1700px] drop-shadow-xl ';
-	const iconClassName = 'w-full h-full';
-
-	const tabs = [
-		{
-			title: 'Writers',
-			img: <img className={className} src={FigmaExample} />,
-			icon: <BsPenFill className={iconClassName} />,
-		},
-		{
-			title: 'Researchers',
-			img: <img className={className} src={FigmaExample} />,
-			icon: <GiArchiveResearch className={iconClassName} />,
-		},
-	];
-	const tabs2 = [
-		{
-			title: 'Students',
-			img: <img className={className} src={FigmaExample} />,
-			icon: <FaGraduationCap className={iconClassName} />,
-		},
-		{
-			title: 'Writers',
-			img: <img className={className} src={FigmaExample} />,
-			icon: <BsPenFill className={iconClassName} />,
-		},
-	];
-	const tabs3 = [
-		{
-			title: 'Researchers',
-			img: <img className={className} src={FigmaExample} />,
-			icon: <GiArchiveResearch className={iconClassName} />,
-		},
-		{
-			title: 'Podcasts',
-			img: <img className={className} src={FigmaExample} />,
-			icon: <FaPodcast className={iconClassName} />,
-		},
-	];
-	//   const tabs2 = [
-	//     {
-	//       title: 'For Developers',
-	//       img: <img className={className} src={FigmaExample} />,
-	//       description: 'Description of first use case',
-	//     },
-	//     {
-	//       title: 'For Learners',
-	//       img: <img className={className} src={FigmaExample} />,
-	//       description: 'Description of first use case',
-	//     },
-	//   ];
-	//   const tabs3 = [
-	//     {
-	//       title: 'For Students',
-	//       img: <img className={className} src={FigmaExample} />,
-	//       description: 'Description of first use case',
-	//     },
-	//   ];
 	return (
 		<div
 			id='creative_processes'
@@ -87,22 +17,30 @@ const CreativeProcessSection: React.FC = () => {
 				<Heading>Elevating the Creative Process</Heading>
 			</div>
 			<UseCase2
-				title="Sometimes, it's easiest to just draw"
-				description='See your ideas in your brain’s native language. Materialize your intricate web of thoughts with no friction.'
-				tabs={tabs}
-				index={1}
+				description={
+					"Hi there! If you're reading this, You’re probably like us — sitting in front of a computer, a lot navigating the complexity of work and life. You’ve also probably used a variety of tools to do so, from Microsoft Word to Email to Excel. "
+				}
+			/>
+			<UseCase2 description='While we’re complete nerds about these tools, we’ve had our fair share of frustrations working with them. To understand why they have the limitations they do, we have to question the history behind them.' />
+			<UseCase2
+				description={
+					'Despite their evolution, our modern tools are really just digital versions of our past physical tools. While Email can send a letter across the world instantaneously, there is nothing fundamentally different about that letter than if it was scribed in paper and ink. While I can type at 143 words per minute on Microsoft Word (😎), the product is not something unproducible in the 1500’s.\n\n Our organisation system is literally just files & folders… but on the computer. While we’ve come a long way from papyrus, our work is still well… pages pieced together ~~in a linear fashion.~~'
+				}
 			/>
 			<UseCase2
-				title={'Develop your ideas under a spotlight'}
-				description='Each idea– each entity of information– is independent. Connect and view them with no limitations.'
-				tabs={tabs2}
-				index={2}
+				description={
+					'Developing our digital tools to mimic the physical ones we already know makes intuitive sense, but we can’t help but ask: Why are our digital tools defined by  limitations of our physical ones? What could we improve if our tools weren’t bounded by the box of silly little physics? \n\n Being tech natives ourselves, we felt the frustration of wanting to move our whiteboard nodes like in Figma, or wishing our textbooks had working links like the Internet.  '
+				}
 			/>
 			<UseCase2
-				title='From a web of thoughts to a final product'
-				description='No thoughts and ideas thrown away. From a mind map, to an outline, to a document, transform with no loss of information.'
-				tabs={tabs3}
-				index={3}
+				description={
+					'To find out, we talked to a lot of people, from professors to writers to students. What powered their creativity and productivity? \n\n In that exploration process, we found many interesting ways of doing and thinking, but underneath it all we found a common underlying shape of thought, governed by four rules.'
+				}
+			/>
+			<UseCase2
+				description={
+					'1. Thoughts are always interconnected, each thought blooming into many others - the human mind is made for thriving in the creative chaos of creating connections, insights and content.\n\n 2. All thoughts are run through the lens of context. Resources, data, and outlines should be seen and grouped through the context they’re in. '
+				}
 			/>
 		</div>
 	);
