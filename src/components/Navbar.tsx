@@ -1,83 +1,84 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import NavItem from './Navbar/NavItem';
 
 // TypeScript users only add this code
 
 const Navbar: React.FC = () => {
-	useEffect(() => {
-		window.onscroll = (event) => {
-			const navbar = document.getElementById('navbar');
-			if (
-				document.body.scrollTop > 20 ||
-				document.documentElement.scrollTop > 20
-			) {
-				navbar?.classList.remove('bg-transparent');
-				navbar?.classList.add('bg-white');
-				navbar?.classList.add('border-b');
-				navbar?.classList.add('border-gray');
-			} else {
-				navbar?.classList.remove('bg-white');
-				navbar?.classList.remove('border-b');
-				navbar?.classList.remove('border-gray');
-				navbar?.classList.add('bg-transparent');
-			}
-		};
-	});
+  useEffect(() => {
+    window.onscroll = (event) => {
+      const navbar = document.getElementById('navbar');
+      if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+      ) {
+        navbar?.classList.remove('bg-transparent');
+        navbar?.classList.add('bg-white');
+        navbar?.classList.add('border-b');
+        navbar?.classList.add('border-gray');
+      } else {
+        navbar?.classList.remove('bg-white');
+        navbar?.classList.remove('border-b');
+        navbar?.classList.remove('border-gray');
+        navbar?.classList.add('bg-transparent');
+      }
+    };
+  });
 
-	return (
-		<div
-			id='navbar'
-			className={
-				'transition-all ease-in flex w-full flex-row justify-between justify-items-stretch px-4 border-b border-gray fixed z-20'
-			}
-		>
-			<div className='flex flex-row justify-items-stretch align-middle py-4'>
-				<a
-					href='#'
-					className='block flex-auto  pl-3 pr-4 py-2'
-					aria-current='page'
-				>
-					<span className='self-center text-xl font-semibold whitespace-nowrap text-w px-6'>
-						graphIQal
-					</span>
-				</a>
+  return (
+    <div
+      id='navbar'
+      className={
+        'transition-all ease-in flex w-full flex-row justify-between justify-items-stretch px-4 border-b border-gray fixed z-20'
+      }
+    >
+      <div className='flex flex-row justify-items-stretch align-middle py-4'>
+        <Link
+          to='/'
+          className='block flex-auto  pl-3 pr-4 py-2'
+          aria-current='page'
+        >
+          <span className='self-center text-xl font-semibold whitespace-nowrap text-w px-6'>
+            graphIQal
+          </span>
+        </Link>
 
-				<a
-					href='#'
-					className='block flex-auto  pl-3 pr-4 py-2 text-gray-700 rounded hover:text-black font-semibold hover:bg-selected_white'
-				>
-					The Science
-				</a>
+        <Link
+          to='/science'
+          className='block flex-auto  pl-3 pr-4 py-2 text-gray-700 rounded hover:text-black font-semibold hover:bg-selected_white'
+        >
+          The Science
+        </Link>
 
-				<a
-					href='#'
-					className='block flex-auto  pl-3 pr-4 py-2 text-gray-700 rounded hover:text-black font-semibold hover:bg-selected_white'
-				>
-					Pricing
-				</a>
-			</div>
-			<div className='flex flex-row justify-items-stretch align-middle py-4'>
-				<a
-					href='#'
-					className='block flex-auto  pl-3 pr-4 py-2 text-gray-700 rounded hover:text-black font-semibold hover:bg-selected_white'
-				>
-					Our Blog
-				</a>
-				<a
-					href='#'
-					className='block flex-auto mr-5 pl-3 pr-4 py-2 text-gray-700 rounded hover:text-black font-semibold hover:bg-selected_white'
-				>
-					Contact Us
-				</a>
-				<button
-					type='button'
-					className='text-white bg-[#2F3C7E] hover:bg-[#1B234B] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-md text-md px-5 .5 text-center mr-3 '
-				>
-					Get graphIQal
-				</button>
-			</div>
-		</div>
-	);
+        <a
+          href='#'
+          className='block flex-auto  pl-3 pr-4 py-2 text-gray-700 rounded hover:text-black font-semibold hover:bg-selected_white'
+        >
+          Pricing
+        </a>
+      </div>
+      <div className='flex flex-row justify-items-stretch align-middle py-4'>
+        <Link
+          to='/blog'
+          className='block flex-auto  pl-3 pr-4 py-2 text-gray-700 rounded hover:text-black font-semibold hover:bg-selected_white'
+        >
+          Our Blog
+        </Link>
+        <a
+          href='#'
+          className='block flex-auto mr-5 pl-3 pr-4 py-2 text-gray-700 rounded hover:text-black font-semibold hover:bg-selected_white'
+        >
+          Contact Us
+        </a>
+        <button
+          type='button'
+          className='text-white bg-[#2F3C7E] hover:bg-[#1B234B] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-md text-md px-5 .5 text-center mr-3 '
+        >
+          Get graphIQal
+        </button>
+      </div>
+    </div>
+  );
 };
 
 export default Navbar;

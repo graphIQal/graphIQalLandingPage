@@ -61,19 +61,10 @@
   @apply drop-shadow-lg;
 }
 
-.gradient {
-  background: linear-gradient(var(--base_white), 70%, var(--base_black));
+#blog_card:hover #square {
+  width: 20rem;
 }
 
-.gradient_line {
-  background: linear-gradient(var(--selected_white), 60%, var(--base_black));
-}
-
-.timeline {
-  margin-left: calc(theme(padding[container]));
-}
-
-.timeline_number {
-  margin-left: calc(-1 * theme(padding[container]) - 1.25rem + 2px);
-  @apply backdrop-blur-md;
+#blog_card:hover #circle {
+  opacity: 100%;
 }
