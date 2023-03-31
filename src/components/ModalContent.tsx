@@ -26,7 +26,7 @@ export const PricingContent = (onClose: any) => {
       </ModalBody>
 
       <ModalFooter>
-        <Button colorScheme='blue' mr={3} onClick={onClose}>
+        <Button bg='#2F3C7E' mr={3} onClick={onClose} color='white'>
           Close
         </Button>
       </ModalFooter>
@@ -44,7 +44,7 @@ export const ContactContent = (onClose: any, state: any, handleSubmit: any) => {
           <div>We hope to get in touch soon.</div>
         </ModalBody>
         <ModalFooter>
-          <Button colorScheme='blue' onClick={onClose}>
+          <Button bg='#2F3C7E' onClick={onClose} color='white'>
             Close
           </Button>
         </ModalFooter>
@@ -75,7 +75,7 @@ export const ContactContent = (onClose: any, state: any, handleSubmit: any) => {
             <Button variant='ghost' mr={3} onClick={onClose}>
               Close
             </Button>
-            <Button type='submit' colorScheme={'blue'}>
+            <Button type='submit' bg='#2F3C7E' color='white'>
               Submit
             </Button>
           </ModalFooter>
@@ -99,7 +99,7 @@ export const GetContent = (
           <div>We'll reach out soon with updates.</div>
         </ModalBody>
         <ModalFooter>
-          <Button colorScheme={'blue'} onClick={onClose}>
+          <Button bg='#2F3C7E' onClick={onClose} color='white'>
             Close
           </Button>
         </ModalFooter>
@@ -129,7 +129,7 @@ export const GetContent = (
             <Button variant='ghost' mr={3} onClick={onClose}>
               Close
             </Button>
-            <Button type='submit' colorScheme='blue'>
+            <Button type='submit' bg='#2F3C7E' color='white'>
               Submit
             </Button>
           </ModalFooter>
