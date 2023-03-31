@@ -1,14 +1,19 @@
 import { ArrowForwardIcon } from '@chakra-ui/icons';
+import { Modal, ModalOverlay, useDisclosure } from '@chakra-ui/react';
 import React, { useCallback, useEffect } from 'react';
 import Particles from 'react-particles';
 import { loadFull } from 'tsparticles';
 import type { Container, Engine } from 'tsparticles-engine';
 import FigmaExample from '../../assets/images/FigmaExample.png';
+import { GetContent } from '../../components/ModalContent';
 import TitleRotation from '../../components/TitleRotation';
+import { useForm } from '@formspree/react';
 
 // TypeScript users only add this code
 
 const HeaderSection: React.FC = () => {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const [stateForm2, handleSubmit2] = useForm('meqwredz');
   useEffect(() => {
     const blob = document.getElementById('blob');
 
@@ -162,7 +167,8 @@ const HeaderSection: React.FC = () => {
         <div className='w-fit'>
           <button
             type='button'
-            className='py-3 px-10 font-bold text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-sm .5 text-center mr-3 '
+            onClick={onOpen}
+            className='py-3 px-10 font-bold text-white bg-[#2F3C7E] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-sm .5 text-center mr-3 '
           >
             Get graphIQal free <ArrowForwardIcon />
           </button>
@@ -179,6 +185,15 @@ const HeaderSection: React.FC = () => {
           </div>
         </div>
       </div>
+      <Modal
+        isCentered
+        blockScrollOnMount={false}
+        isOpen={isOpen}
+        onClose={onClose}
+      >
+        <ModalOverlay />
+        {GetContent(onClose, stateForm2, handleSubmit2)}
+      </Modal>
     </div>
   );
 };
