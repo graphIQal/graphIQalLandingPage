@@ -5,7 +5,7 @@ import UseCase2 from '../../components/UseCase2';
 import Tools from '../../assets/images/narrative/tools.png';
 import Frustration from '../../assets/images/narrative/frustrations.png';
 import Box from '../../assets/images/narrative/box.png';
-import Mind from '../../assets/images/narrative/mind.png';
+import Mind from '../../assets/images/narrative/mind2.png';
 import People from '../../assets/images/narrative/people.png';
 import History from '../../assets/images/narrative/history.png';
 
