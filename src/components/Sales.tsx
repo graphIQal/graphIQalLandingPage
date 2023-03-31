@@ -2,6 +2,7 @@ import { Heading } from '@chakra-ui/react';
 import React, { RefObject, useEffect, useMemo, useRef, useState } from 'react';
 import { ArrowForwardIcon } from '@chakra-ui/icons';
 import Face from '../assets/images/face.png';
+import { Link } from 'react-router-dom';
 import './components.css';
 export default function useOnScreen(ref: RefObject<HTMLElement>) {
   const [isIntersecting, setIntersecting] = useState(false);
@@ -129,7 +130,9 @@ export const Sales: React.FC = () => {
           </div>
           <a className='flex flex-row align-middle items-center justify-start px-container gap-2 hover:cursor-pointer text-xl font-semibold text-[#2F3C7E]'>
             Unlock your potential with the power of connections
-            <ArrowForwardIcon />
+            <Link to='/science'>
+              <ArrowForwardIcon />
+            </Link>
           </a>
         </div>
         {/* </div> */}

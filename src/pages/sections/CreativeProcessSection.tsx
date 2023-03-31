@@ -13,14 +13,14 @@ const CreativeProcessSection: React.FC = () => {
   return (
     <div
       id='creative_processes'
-      className='flex flex-col rounded-md space-y-10 relative px-[15vw]'
+      className='flex flex-col rounded-md space-y-10 relative px-[15vw] gap-y-10'
     >
       <div className='m-5 w-0.3 text-center'>
         {/* <img
           className='w-16 absolute mt-[-40px] ml-[-40px]'
           src={ConnectionIcon}
         /> */}
-        <Heading>Elevating the Creative Process</Heading>
+        <Heading>Our Story: the Inspiration behind graphIQal</Heading>
       </div>
       <UseCase2
         description={
