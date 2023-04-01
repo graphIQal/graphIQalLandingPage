@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgraphiqal_landngpage=self.webpackChunkgraphiqal_landngpage||[]).push([[713],{9713:function(a,e,n){a.exports=n.p+"static/media/SciencePost.1365d6160db780fe9815.md"}}]);
