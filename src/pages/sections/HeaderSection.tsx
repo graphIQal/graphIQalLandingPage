@@ -7,6 +7,8 @@ import type { Container, Engine } from 'tsparticles-engine';
 import FigmaExample from '../../assets/images/FigmaExample.png';
 import { GetContent } from '../../components/ModalContent';
 import TitleRotation from '../../components/TitleRotation';
+import Header from '../../assets/images/figmas/header.png';
+
 import { useForm } from '@formspree/react';
 
 // TypeScript users only add this code
@@ -170,7 +172,7 @@ const HeaderSection: React.FC = () => {
             onClick={onOpen}
             className='py-3 px-10 font-bold text-white bg-[#2F3C7E] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-sm .5 text-center mr-3 '
           >
-            Get graphIQal free <ArrowForwardIcon />
+            Get graphIQal
           </button>
         </div>
         <div className='w-full mx-auto my-12'>
@@ -180,7 +182,7 @@ const HeaderSection: React.FC = () => {
               className={
                 'mx-auto h-auto w-2/3 drop-shadow-xl rounded-md border border-lining'
               }
-              src={FigmaExample}
+              src={Header}
             />
           </div>
         </div>
