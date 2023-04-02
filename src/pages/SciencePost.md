@@ -54,7 +54,7 @@ An idea that has been activated does not merely evoke one other idea. It activat
 
 #
 
-> _The notion that we have limited access to the workings of our minds is difficult to accept because, naturally, it is alien to our experience, but it is true: you know far less about yourself than you feel you do._
+"_The notion that we have limited access to the workings of our minds is difficult to accept because, naturally, it is alien to our experience, but it is true: you know far less about yourself than you feel you do._"
 
 #
 
@@ -87,7 +87,7 @@ Consider the anecdote below:
 
 #
 
-> _Claude Shannon launched the Information Age thanks to a philosophy course he took to fulfill a requirement at the University of Michigan. In it, he was exposed to the work of self-taught nineteenth-century English logician George Boole, who assigned a value of 1 to true statements and 0 to false statements and showed that logic problems could be solved like math equations. It resulted in absolutely nothing of practical importance until seventy years after Boole passed away, when Shannon did a summer internship at AT&T's Bell Labs research facility. There he recognized that he could combine telephone call-routing technology with Boole's logic system to encode and transmit any type of information electronically. It was the fundamental insight on which computers rely. "It just happened that no one else was familiar with both those fields at the same time," Shannon said."_
+"_Claude Shannon launched the Information Age thanks to a philosophy course he took to fulfill a requirement at the University of Michigan. In it, he was exposed to the work of self-taught nineteenth-century English logician George Boole, who assigned a value of 1 to true statements and 0 to false statements and showed that logic problems could be solved like math equations. It resulted in absolutely nothing of practical importance until seventy years after Boole passed away, when Shannon did a summer internship at AT&T's Bell Labs research facility. There he recognized that he could combine telephone call-routing technology with Boole's logic system to encode and transmit any type of information electronically. It was the fundamental insight on which computers rely. "It just happened that no one else was familiar with both those fields at the same time," Shannon said."_
 
 #
 
@@ -103,7 +103,7 @@ In _Originals_, Adam Grant explains the idea of "Vuja de": the opposite of deja 
 
 #
 
-> _Most papers relied purely on conventional combinations of previous knowledge. That is, they cited work from other journals that often appeared together in other studies' lists of references. The "hit" papers, those that over the next decade were used by a huge number of other scientists, featured ample conventional combinations, but also added an injection of unusual knowledge combinations._
+"_Most papers relied purely on conventional combinations of previous knowledge. That is, they cited work from other journals that often appeared together in other studies' lists of references. The "hit" papers, those that over the next decade were used by a huge number of other scientists, featured ample conventional combinations, but also added an injection of unusual knowledge combinations._"
 
 #
 
@@ -115,4 +115,4 @@ The key takeaway, from all this, is an introduction to the power, importance, an
 
 #
 
-> _If we could understand the 'physics of concepts', then we could perhaps derive from it the 'chemistry of creativity'._
+"_If we could understand the 'physics of concepts', then we could perhaps derive from it the 'chemistry of creativity'._"

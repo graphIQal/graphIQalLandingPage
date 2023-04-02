@@ -170,7 +170,7 @@ const HeaderSection: React.FC = () => {
           <button
             type='button'
             onClick={onOpen}
-            className='py-3 px-10 font-bold text-white bg-[#2F3C7E] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-sm .5 text-center mr-3 '
+            className='py-3 px-10 font-bold text-white bg-[#2F3C7E] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-md .5 text-center mr-3 '
           >
             Get graphIQal
           </button>
