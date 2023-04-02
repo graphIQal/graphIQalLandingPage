@@ -173,7 +173,7 @@ export const Science: React.FC = () => {
             </Link>
           </div>
           <div
-            className=' flex flex-row justify-between
+            className=' flex flex-row justify-center flex-wrap
       '
           >
             {blogsToShow.map((post, i) => (
