@@ -1,14 +1,42 @@
 import { Divider, Heading, Text } from '@chakra-ui/react';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Navbar from '../components/Navbar';
 import NeuralNetwork from '../assets/images/blog/neural_network2.png';
 import BlogCard from '../components/BlogCard';
 import Blog, { blogPosts } from './Blog';
 import { AiOutlineArrowRight } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
+import ChakraUIRenderer from 'chakra-ui-markdown-renderer';
+import ReactMarkdown from 'react-markdown';
+
 export const Science: React.FC = () => {
   const blogsToShow = [];
   blogsToShow.push(blogPosts[0], blogPosts[1], blogPosts[2]);
+  const filename = 'SciencePost.md';
+  const [post, setPost] = useState('');
+
+  useEffect(() => {
+    import(`./${filename}`)
+      .then((res) => {
+        fetch(res.default)
+          .then((res) => res.text())
+          .then((res) => setPost(res))
+          .catch((err) => console.log(err));
+      })
+      .catch((err) => console.log(err));
+  });
+
+  const newTheme = {
+    p: (props: { children: any }) => {
+      const { children } = props;
+      return (
+        <Text textAlign={'left'} fontSize='lg' mb={'8'}>
+          {children}
+        </Text>
+      );
+    },
+  };
+
   return (
     <div>
       <Navbar />
@@ -30,7 +58,14 @@ export const Science: React.FC = () => {
         </div>
       </div>
       <div className='w-full flex flex-col items-center align-middle justify-center py-container'>
-        <Text fontSize={'xl'} className='w-[60%] space-y-5'>
+        <div className='w-[60%]'>
+          <ReactMarkdown
+            components={ChakraUIRenderer(newTheme)}
+            skipHtml
+            children={post}
+          ></ReactMarkdown>
+        </div>
+        {/* <Text fontSize={'xl'} className='w-[60%] space-y-5'>
           At the core of graphIQal lies the goal of capturing what we’re calling
           our brain’s “native language”. It is only in this situation, where we
           can see things in front of us the way our brain sees them, that we can
@@ -123,7 +158,7 @@ export const Science: React.FC = () => {
           combinations. These random insights could be in anyone - could be in
           you? *If we could understand the ‘physics of concepts’, then we could
           perhaps derive from it the ‘chemistry of creativity’*
-        </Text>
+        </Text> */}
         <Divider width={'70%'} alignSelf='center' className='my-10' />
         <div className='text-left px-container'>
           <div className='flex flex-row gap-x-5 align-middle items-center'>
@@ -138,7 +173,7 @@ export const Science: React.FC = () => {
             </Link>
           </div>
           <div
-            className=' flex flex-row justify-between
+            className=' flex flex-row justify-center flex-wrap
       '
           >
             {blogsToShow.map((post, i) => (

@@ -1,10 +1,40 @@
-import React, { useEffect } from 'react';
+import {
+  Modal,
+  ModalBody,
+  ModalCloseButton,
+  ModalContent,
+  ModalHeader,
+  ModalOverlay,
+  useDisclosure,
+  Text,
+  ModalFooter,
+  Button,
+} from '@chakra-ui/react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { PricingContent, GetContent, ContactContent } from './ModalContent';
 import NavItem from './Navbar/NavItem';
+import { useForm } from '@formspree/react';
 
 // TypeScript users only add this code
 
 const Navbar: React.FC = () => {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const [currModal, setCurrModal] = useState(0);
+
+  const [state, handleSubmit] = useForm('xdovwajo');
+  const [stateForm2, handleSubmit2] = useForm('meqwredz');
+  const getModalContent = () => {
+    switch (currModal) {
+      case 0:
+        return PricingContent(onClose);
+      case 1:
+        return GetContent(onClose, stateForm2, handleSubmit2);
+      case 2:
+        return ContactContent(onClose, state, handleSubmit);
+    }
+  };
+
   useEffect(() => {
     window.onscroll = (event) => {
       const navbar = document.getElementById('navbar');
@@ -53,6 +83,10 @@ const Navbar: React.FC = () => {
         <a
           href='#'
           className='block flex-auto  pl-3 pr-4 py-2 text-gray-700 rounded hover:text-black font-semibold hover:bg-selected_white'
+          onClick={() => {
+            setCurrModal(0);
+            onOpen();
+          }}
         >
           Pricing
         </a>
@@ -66,17 +100,34 @@ const Navbar: React.FC = () => {
         </Link>
         <a
           href='#'
+          onClick={() => {
+            setCurrModal(2);
+            onOpen();
+          }}
           className='block flex-auto mr-5 pl-3 pr-4 py-2 text-gray-700 rounded hover:text-black font-semibold hover:bg-selected_white'
         >
           Contact Us
         </a>
         <button
+          onClick={() => {
+            setCurrModal(1);
+            onOpen();
+          }}
           type='button'
           className='text-white bg-[#2F3C7E] hover:bg-[#1B234B] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-md text-md px-5 .5 text-center mr-3 '
         >
           Get graphIQal
         </button>
       </div>
+      <Modal
+        isCentered
+        blockScrollOnMount={false}
+        isOpen={isOpen}
+        onClose={onClose}
+      >
+        <ModalOverlay />
+        {getModalContent()}
+      </Modal>
     </div>
   );
 };

@@ -1,12 +1,14 @@
 {
   "name": "graphiqal-landngpage",
   "version": "0.1.0",
+  "homepage": "https://jesseliii.github.io/graphIQalLandingPage",
   "private": true,
   "dependencies": {
     "@chakra-ui/icons": "^2.0.17",
     "@chakra-ui/react": "^2.5.1",
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
+    "@formspree/react": "^2.4.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -14,11 +16,13 @@
     "@types/node": "^16.18.12",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
+    "chakra-ui-markdown-renderer": "^4.1.0",
     "flowbite": "^1.6.3",
     "framer-motion": "^10.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
+    "react-markdown": "^8.0.6",
     "react-particles": "^2.9.3",
     "react-router-dom": "^6.9.0",
     "react-scripts": "5.0.1",
@@ -27,6 +31,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -51,6 +57,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "tailwindcss": "^3.2.7"
   }
 }

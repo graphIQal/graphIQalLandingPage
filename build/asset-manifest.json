@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/graphIQalLandingPage/static/css/main.bd42cc34.css",
+    "main.js": "/graphIQalLandingPage/static/js/main.7293120c.js",
+    "static/js/713.e7617e82.chunk.js": "/graphIQalLandingPage/static/js/713.e7617e82.chunk.js",
+    "static/css/870.b1af888d.chunk.css": "/graphIQalLandingPage/static/css/870.b1af888d.chunk.css",
+    "static/js/870.25706cba.chunk.js": "/graphIQalLandingPage/static/js/870.25706cba.chunk.js",
+    "static/css/262.b1af888d.chunk.css": "/graphIQalLandingPage/static/css/262.b1af888d.chunk.css",
+    "static/js/262.0708419f.chunk.js": "/graphIQalLandingPage/static/js/262.0708419f.chunk.js",
+    "static/js/787.5a0d31da.chunk.js": "/graphIQalLandingPage/static/js/787.5a0d31da.chunk.js",
+    "static/media/neural_network2.png": "/graphIQalLandingPage/static/media/neural_network2.55fcf50d1fa9e6b46037.png",
+    "static/media/FigmaExample.png": "/graphIQalLandingPage/static/media/FigmaExample.215eb40fc253d3930d61.png",
+    "static/media/mind2.png": "/graphIQalLandingPage/static/media/mind2.b6f8e301e41da538d945.png",
+    "static/media/frustrations.png": "/graphIQalLandingPage/static/media/frustrations.4b02a730a2409d824d4c.png",
+    "static/media/box.png": "/graphIQalLandingPage/static/media/box.4e2b2f955535ff81d1d3.png",
+    "static/media/people.png": "/graphIQalLandingPage/static/media/people.47a4fce257ca2249959a.png",
+    "static/media/history.png": "/graphIQalLandingPage/static/media/history.4bb7e0d490c0f924a23e.png",
+    "static/media/face.png": "/graphIQalLandingPage/static/media/face.b227342c168a160c524d.png",
+    "static/media/blog_cards.png": "/graphIQalLandingPage/static/media/blog_cards.ce5cb4f5c18030be641f.png",
+    "static/media/design_system.png": "/graphIQalLandingPage/static/media/design_system.5fc54bd2c5f108c75226.png",
+    "static/media/hackathon.png": "/graphIQalLandingPage/static/media/hackathon.164b84a8d14f18e618d7.png",
+    "static/media/tools.png": "/graphIQalLandingPage/static/media/tools.dbe13b12a779f34c6fd4.png",
+    "static/media/design_proverbs.png": "/graphIQalLandingPage/static/media/design_proverbs.25d7f28c553a40ad9c65.png",
+    "static/media/vision.png": "/graphIQalLandingPage/static/media/vision.452044317f062c8ce36f.png",
+    "static/media/contents.png": "/graphIQalLandingPage/static/media/contents.4353a69c6f87e6bd5d95.png",
+    "static/media/SciencePost.md": "/graphIQalLandingPage/static/media/SciencePost.1365d6160db780fe9815.md",
+    "index.html": "/graphIQalLandingPage/index.html",
+    "main.bd42cc34.css.map": "/graphIQalLandingPage/static/css/main.bd42cc34.css.map",
+    "main.7293120c.js.map": "/graphIQalLandingPage/static/js/main.7293120c.js.map",
+    "870.b1af888d.chunk.css.map": "/graphIQalLandingPage/static/css/870.b1af888d.chunk.css.map",
+    "870.25706cba.chunk.js.map": "/graphIQalLandingPage/static/js/870.25706cba.chunk.js.map",
+    "262.b1af888d.chunk.css.map": "/graphIQalLandingPage/static/css/262.b1af888d.chunk.css.map",
+    "262.0708419f.chunk.js.map": "/graphIQalLandingPage/static/js/262.0708419f.chunk.js.map",
+    "787.5a0d31da.chunk.js.map": "/graphIQalLandingPage/static/js/787.5a0d31da.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bd42cc34.css",
+    "static/js/main.7293120c.js"
+  ]
+}
