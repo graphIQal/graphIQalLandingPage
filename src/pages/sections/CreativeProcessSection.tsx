@@ -39,7 +39,7 @@ const CreativeProcessSection: React.FC = () => {
 			/>
 			<UseCase2
 				description={
-					'1. Thoughts are always interconnected, each thought blooming into many others - the human mind is made for thriving in the creative chaos of creating connections, insights and content.\n\n 2. All thoughts are run through the lens of context. Resources, data, and outlines should be seen and grouped through the context they’re in. '
+					'1. Thoughts are always interconnected, each thought blooming into many others - the human mind is made for thriving in the creative chaos of creating connections, insights and content.\n\n 2. All thoughts are run through the lens of context. Resources, data, and outlines should be seen and grouped through the context they’re in. \n\n 3. Thoughts are recursively discrete. Bundle Sizes. With paper, an insight has to be bound by the chapter, which has to be bound by a book. You can’t just rip a sentence out of a physical book like some monster. \n\n 4. We learn best when we can attach new information to a foundation, to our existing mental models. '
 				}
 			/>
 		</div>

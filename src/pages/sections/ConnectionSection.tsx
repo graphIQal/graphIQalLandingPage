@@ -7,6 +7,8 @@ import UseCase from '../../components/UseCase';
 
 // TypeScript users only add this code
 import { GiArchiveResearch } from 'react-icons/gi';
+import { AiFillEye } from 'react-icons/ai';
+
 const ConnectionSection: React.FC = () => {
 	const className =
 		'drop-shadow-xl rounded-lg border border-lining max-h-[65vh] w-auto h-auto';
@@ -16,12 +18,21 @@ const ConnectionSection: React.FC = () => {
 			title: 'Writers',
 			icon: <BsPenFill className={iconClassName} />,
 			img: <img className={className} src={FigmaExample} />,
+			description:
+				'Version Control for your work. Explore and iterate without fear. ',
 		},
 		{
-			title: 'Researchers',
-			icon: <GiArchiveResearch className={iconClassName} />,
+			title: 'Visual',
+			icon: <AiFillEye className={iconClassName} />,
 			img: <img className={className} src={FigmaExample} />,
+			description: '',
 		},
+		// {
+		// 	title: 'Researchers',
+		// 	icon: <GiArchiveResearch className={iconClassName} />,
+		// 	img: <img className={className} src={FigmaExample} />,
+		// 	description: ''
+		// },
 		{
 			title: 'Artists',
 			icon: <FaPaintBrush className={iconClassName} />,
@@ -60,8 +71,8 @@ const ConnectionSection: React.FC = () => {
 			</div>
 			<div className='space-y-12'>
 				<UseCase
-					title='Perfect visualisation for your information'
-					description='See and edit your information in a graph, a document, organized by time, or however you want. And sync seamlessly between them.'
+					title='The Power of Connections'
+					description='The world is complex, but it doesn’t have to be messy. By thinking in terms of associations and relationships rather than rows and tables in a database, graphIQal can turn information overwhelm into a a weapon of creativity.'
 					tabs={tabs}
 				/>
 				<UseCase

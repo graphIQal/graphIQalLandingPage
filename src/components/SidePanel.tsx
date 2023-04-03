@@ -26,6 +26,12 @@ export const SidePanel: React.FC<{
 				</Heading>
 				<p className='text-body'>{description}</p>
 			</div>
+			<div
+				className={'text-md'}
+				style={{ color: colours[colours.length % (selected + 1)] }}
+			>
+				{tabs[selected].description}
+			</div>
 			<div className='flex flex-row flex-wrap'>
 				{tabs.map((tab: any, i: number) => (
 					<div
@@ -36,6 +42,12 @@ export const SidePanel: React.FC<{
 								? 'bg-white border-2 drop-shadow '
 								: 'bg-selected_white border-2')
 						}
+						style={{
+							color:
+								selected === i
+									? colours[colours.length % (selected + 1)]
+									: '',
+						}}
 					>
 						<div
 							className={'grow p-3 text-[' + colours[i] + '] '}
