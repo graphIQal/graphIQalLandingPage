@@ -24,7 +24,7 @@ export const SidePanel: React.FC<{
 				<Heading as='h3' size='lg'>
 					{title}
 				</Heading>
-				<p className='text-body'>{description}</p>
+				<p className=''>{description}</p>
 			</div>
 			<div
 				className={'text-md'}

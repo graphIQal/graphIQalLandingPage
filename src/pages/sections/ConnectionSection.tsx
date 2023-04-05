@@ -29,18 +29,21 @@ const ConnectionSection: React.FC = () => {
 			icon: <BsPenFill className={iconClassName} />,
 			img: <img className={className} src={VC} />,
 			description:
-				'Version Control for your work. Explore and iterate without fear. ',
+				'Version Control for your work. Explore parallel versions and iterate without fear.',
 		},
 		{
 			title: 'Visual',
 			icon: <AiFillEye className={iconClassName} />,
 			img: <img className={className} src={FigmaExample} />,
-			description: '',
+			description:
+				'Represent and work with information visually, seamlessly translating to the end goal',
 		},
 		{
-			title: 'Teams',
+			title: 'Productivity',
 			icon: <RiTeamLine className={iconClassName} />,
 			img: <img className={className} src={Roadmap} />,
+			description:
+				'Beyond Files & Folders. Simply create connections and be seamlessly organised',
 		},
 		// {
 		//   title: 'Artists',
@@ -60,26 +63,48 @@ const ConnectionSection: React.FC = () => {
 	];
 	const tabs2 = [
 		{
-			title: 'Goals',
-			icon: <GiStairsGoal className={iconClassName} />,
-			img: <img className={className} src={Goals} />,
+			title: 'Teams',
+			icon: <RiTeamLine className={iconClassName} />,
+			img: <img className={className} src={Meeting} />,
+			description:
+				'Because connections are non-linear, the your tasks & documentation can be organised however needed: by Teams, Time, Project, Person, etc. ',
 		},
 		{
 			title: 'Writers',
+			icon: <RiTeamLine className={iconClassName} />,
+			img: <img className={className} src={Meeting} />,
+			description:
+				'Be able to write for a specific character, see all personalities of a group, or understand how each setting affects each character - without redundancy',
+		},
+		{
+			title: 'Research',
+			icon: <GiStairsGoal className={iconClassName} />,
+			img: <img className={className} src={Goals} />,
+			description:
+				'Open a resource in the context of a project or topic, see only the relevant highlights.',
+		},
+		{
+			title: 'Creatives',
 			icon: <BsPenFill className={iconClassName} />,
 			img: <img className={className} src={Timeline} />,
+			description:
+				'Map the structure of one idea into another to create powerful analogies and capabilities.',
 		},
 	];
 	const tabs3 = [
 		{
-			title: 'Teams',
-			icon: <RiTeamLine className={iconClassName} />,
+			title: 'Growth',
+			icon: <FaSeedling className={iconClassName} />,
 			img: <img className={className} src={Meeting} />,
+			description:
+				'Beyond Bullet Journals. A bullet journal that integrates straight to your to-do’s.',
 		},
 		{
 			title: 'Researchers',
 			icon: <GiArchiveResearch className={iconClassName} />,
 			img: <img className={className} src={Research} />,
+			description:
+				'No longer be forced to have your knowledge bound by whole books, chapters, or even paragraphs. graphIQal treats each level as its own entity',
 		},
 	];
 	const tabs4 = [
@@ -87,40 +112,64 @@ const ConnectionSection: React.FC = () => {
 			title: 'Writers',
 			icon: <BsPenFill className={iconClassName} />,
 			img: <img className={className} src={BlogPost} />,
+			description: "Build your own knowledge graphs and wiki's",
 		},
 		{
 			title: 'Students',
 			icon: <FaGraduationCap className={iconClassName} />,
 			img: <img className={className} src={Wiki} />,
+			description: '',
+		},
+		{
+			title: 'Wikis',
+			icon: <FaGraduationCap className={iconClassName} />,
+			img: <img className={className} src={Wiki} />,
+			description:
+				'A new form of guide (maybe student wiki’s for classes)',
+		},
+		{
+			title: 'Students',
+			icon: <FaGraduationCap className={iconClassName} />,
+			img: <img className={className} src={Wiki} />,
+			description:
+				'Unite your knowledge (Learning - React, Design, etc.) ',
 		},
 	];
 
 	return (
 		<div className='flex flex-col rounded-md'>
-			<div className='w-0.3 text-center mb-5'>
-				<Heading>Flexible, Interconnected Information</Heading>
+			<div className='w-1/2 text-center mb-5 self-center'>
+				<Heading className='mb-3'>
+					Unleash the Power of Connections
+				</Heading>
+				<div>
+					You’re not disorganised, lost, or unfocused. Think of the
+					complexity of your life, your thoughts, and your work. Most
+					tools doesn’t speak your brain’s native language, where
+					information is layered, flexible, interconnected. Anyone who
+					wants to succeed’ in our current, hyper-connected world
+					stands to benefit from graphIQal.
+				</div>
 			</div>
 			<div className='space-y-12'>
 				<UseCase
-					title='Perfect visualisation for your information'
-					description='See and edit your information in a graph, a document, organized by time, or however you want. And sync seamlessly between them.'
+					title='The power of connections'
+					description='The world is complex, but it doesn’t have to be messy. By thinking in terms of associations and relationships rather than rows and tables in a database, graphIQal can turn information overwhelm into a a weapon of creativity.'
 					tabs={tabs}
 				/>
 				<UseCase
-					title={
-						'You’re not messy.  organisation for a complex world.'
-					}
-					description='Put information wherever and in however many places you want. Break it down to individual units.'
-					tabs={tabs3}
-				/>
-				<UseCase
-					title='Connections are a first class citizen'
-					description='Make connections between seemingly unrelated information, uncovering new insights.'
+					title={'See only the essential for your context.'}
+					description='When the world is a firehose of information, we needed a tool that could help us block out the unessential as much as one helping us use it. GraphIQal is a tool that’s focused on making use of your information according to your specific context, and helping the unessential stay out of your way until you need it.'
 					tabs={tabs2}
 				/>
 				<UseCase
+					title='Break down Information for Clarity & Focus'
+					description='Make connections between seemingly unrelated information, uncovering new insights.'
+					tabs={tabs3}
+				/>
+				<UseCase
 					title='Accumulation of Knowledge'
-					description='Collect resources and ideas as you live, no worryinga about organization.'
+					description='Leverage your unique constellation of knowledge. graphIQal is built to handle the complexity of your projects, designed for speed of input and to pull from your resources seamlessly. '
 					tabs={tabs4}
 				/>
 			</div>
