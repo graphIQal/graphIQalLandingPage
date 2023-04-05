@@ -54,19 +54,19 @@ const CreativeProcessSection: React.FC = () => {
 			/>
 			<UseCase2
 				description={
-					'1. Thoughts are always interconnected, each thought blooming into many others - the human mind is made for thriving in the creative chaos of creating connections, insights and content.\n\n 2. All thoughts are run through the lens of context. Resources, data, and outlines should be seen and grouped through the context they’re in. \n\n 3. Thoughts are recursively discrete. Bundle Sizes. With paper, an insight has to be bound by the chapter, which has to be bound by a book. You can’t just rip a sentence out of a physical book like some monster. \n\n 4. We learn best when we can attach new information to a foundation, to our existing mental models.'
+					'1. Thoughts are always interconnected, each thought blooming into many others - the human mind is made for thriving in the creative chaos of creating connections, insights and content.\n\n 2. All thoughts are run through the lens of context. Resources, data, and outlines should be seen and grouped through the context they’re in. \n\n 3. Information is recursively discrete. \n\n 4. We learn best when we can attach new information to a foundation, to our existing mental models.'
 				}
 				src={Mind}
 			/>
 			<UseCase2
 				description={
-					"Along with these shapes of thought, we found the deeper philosophies that powered Creativity and Productivity. \n\n The Knowledge-Action Gap: Most of us know what we should do to be happier, healthier, and wealthier. Our world doesn’t lack information, but it lacks ways to grapple that information, to bridge the knowledge-action gap. Use graphIQal to break down high-level journal reflections to general timelines, to specific to-do tasks. \n\n Your second brain : Our brains aren't good at certain things: Remembering, organising, and documenting everything (is it a surprise that people hated this part the most?). By creating an organised space to store your knowledge, we can become less stressed and more productive. \n\n Creativity : Our research into the space of creativity has shown us that groundbreaking insights are about making connections between things that aren’t usually connected. Since everyone has a unique mosaic of experiences, skills, and knowledge, we truly believe that within everyone lies the potential to create something impactful if they have the structure to do so."
+					"Along with these shapes of thought, we found the deeper philosophies that powered Creativity and Productivity. \n\n The Knowledge-Action Gap: Most of us know what we should do to be happier, healthier, and wealthier. Our world doesn’t lack information, but it lacks ways to grapple that information, to bridge the knowledge-action gap, to be able to flit between both the high-level goals and the low-level tasks. \n\n Your second brain : Our brains aren't good at Storage. By creating an organised space to store your knowledge, we can become less stressed and more productive."
 				}
 				src={Lightbulb}
 			/>
 			<UseCase2
 				description={
-					'Thats everything for now! We appreciate you getting this far, and would love to hear your input on graphIQal or anything else :)'
+					'Creativity : Our research into the space of creativity has shown us that groundbreaking insights are about making connections between things that aren’t usually connected. Since everyone has a unique mosaic of experiences, skills, and knowledge, we want to bring out the potential for everyone to create something impactful. \n\n Thats everything for now! We appreciate you getting this far, and would love to hear your input on graphIQal or anything else :)'
 				}
 				src={Plane}
 			/>

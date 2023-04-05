@@ -30,7 +30,7 @@ body {
   top: 50%;
   translate: -50% -50%;
   border-radius: 50%;
-  background: linear-gradient(to right, aquamarine, mediumpurple);
+  background: linear-gradient(to right, rgb(29, 211, 150), rgb(79, 23, 192));
   animation: rotate 10s infinite;
   opacity: 0.95;
 }
