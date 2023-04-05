@@ -8,6 +8,8 @@ import Box from '../../assets/images/narrative/box.png';
 import Mind from '../../assets/images/narrative/mind2.png';
 import People from '../../assets/images/narrative/people.png';
 import History from '../../assets/images/narrative/history.png';
+import Lightbulb from '../../assets/images/narrative/lightbulb.png';
+import Plane from '../../assets/images/narrative/plane.png';
 
 const CreativeProcessSection: React.FC = () => {
 	return (
@@ -60,9 +62,14 @@ const CreativeProcessSection: React.FC = () => {
 				description={
 					"Along with these shapes of thought, we found the deeper philosophies that powered Creativity and Productivity. \n\n The Knowledge-Action Gap: Most of us know what we should do to be happier, healthier, and wealthier. Our world doesn’t lack information, but it lacks ways to grapple that information, to bridge the knowledge-action gap. Use graphIQal to break down high-level journal reflections to general timelines, to specific to-do tasks. \n\n Your second brain : Our brains aren't good at certain things: Remembering, organising, and documenting everything (is it a surprise that people hated this part the most?). By creating an organised space to store your knowledge, we can become less stressed and more productive. \n\n Creativity : Our research into the space of creativity has shown us that groundbreaking insights are about making connections between things that aren’t usually connected. Since everyone has a unique mosaic of experiences, skills, and knowledge, we truly believe that within everyone lies the potential to create something impactful if they have the structure to do so."
 				}
-				src={Mind}
+				src={Lightbulb}
 			/>
-			<UseCase2 description={'Wrap up'} src={Mind} />
+			<UseCase2
+				description={
+					'Thats everything for now! We appreciate you getting this far, and would love to hear your input on graphIQal or anything else :)'
+				}
+				src={Plane}
+			/>
 		</div>
 	);
 };
