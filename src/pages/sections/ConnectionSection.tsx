@@ -33,7 +33,7 @@ const ConnectionSection: React.FC = () => {
         'Version Control for your work. Explore parallel versions and iterate without fear.',
     },
     {
-      title: 'Visualising',
+      title: 'Visualizing',
       icon: <AiFillEye className={iconClassName} />,
       img: <img className={className} src={Roadmap} />,
       description:
