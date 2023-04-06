@@ -36,7 +36,7 @@ const CreativeProcessSection: React.FC = () => {
 			/>
 			<UseCase2
 				description={
-					'Despite their evolution, our modern tools are really just digital versions of our past physical tools. While Email can send a letter across the world instantaneously, there is nothing fundamentally different about that letter than if it was scribed in paper and ink. While I can type at 143 words per minute on Microsoft Word (😎), the product is not something unproducible in the 1500’s.\n\n Our organisation system is literally just files & folders… but on the computer. While we’ve come a long way from papyrus, our work is still well… pages pieced together ~~in a linear fashion.~~'
+					'Despite their evolution, our modern tools are really just digital versions of our past physical tools. While Email can send a letter across the world instantaneously, there is nothing fundamentally different about that letter than if it was scribed in paper and ink. While I can type at 143 words per minute on Microsoft Word (😎), the product is not something unproducible in the 1500’s.\n\n Our organisation system is literally just files & folders… but on the computer. While we’ve come a long way from papyrus, our work is still well… pages pieced together ~~in a linear fashion~~'
 				}
 				src={Frustration}
 			/>
