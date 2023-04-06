@@ -65,12 +65,12 @@ const Blog: React.FC = () => {
   return (
     <>
       <Navbar />
-      <div className='p-container'>
+      <div className='md:p-container py-container'>
         {/* <div className='w-0.3 text-center mb-5 mt-16'>
           <Heading>Our Blog</Heading>
         </div> */}
         <div
-          className=' flex flex-row justify-left items-stretch flex-wrap mt-16
+          className=' flex flex-row justify-center lg:justify-start items-stretch flex-wrap mt-16
       '
         >
           {blogPosts.map((post, i) => (

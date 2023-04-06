@@ -74,12 +74,12 @@ export const Sales: React.FC = () => {
   }, [isVisible]);
 
   return (
-    <div className='flex flex-row w-full p-container items-center'>
+    <div className='flex flex-col-reverse md:flex-row w-full p-container items-center'>
       <div
         ref={ref}
-        className='rounded-md w-[90%] text-left p-container flex flex-col'
+        className='rounded-md w-full md:w-[90%] text-left md:p-container flex flex-col'
       >
-        <div className='text-xl p-container  quote italic font-medium'>
+        <div className='text-md md:text-xl py-container md:p-container quote italic font-medium'>
           {/* <span className='italic ml-[-5%] text-[3rem] '>"</span> */}
           {/* <br /> */}
           {/* There he recognized that he could combine telephone call-routing
@@ -105,10 +105,10 @@ export const Sales: React.FC = () => {
           </div>
         </div>
         {/* <div className='w-[60%] text-left space-y-5 p-container bg rounded-md bg-selected_white drop-shadow-lg '> */}
-        <div className='font-semibold text-4xl flex flex-col w-full letter'>
+        <div className='font-semibold text-2xl md:text-4xl flex flex-col w-full letter'>
           <div className='flex flex-col px-container py-5'>
             <div>
-              <span className='font-normal'>Leverage </span>
+              <span className='lfont-normal'>Leverage </span>
               <span className='opacity-0 text-sm'>a</span>
               <span className='font-normal' id='word-1'>
                 your
@@ -128,7 +128,7 @@ export const Sales: React.FC = () => {
               <span id='word-5'>experiences.</span>
             </div>
           </div>
-          <a className='flex flex-row align-middle items-center justify-start px-container gap-2 hover:cursor-pointer text-xl font-semibold text-[#2F3C7E]'>
+          <a className='flex flex-row align-middle items-center text-left md:text-center justify-start px-container gap-2 hover:cursor-pointer text-sm md:text-xl font-semibold text-[#2F3C7E]'>
             Unlock your potential with the power of connections
             <Link to='/science'>
               <ArrowForwardIcon />
@@ -139,7 +139,7 @@ export const Sales: React.FC = () => {
 
         {/* </div> */}
       </div>
-      <div className='w-[90%] p-container rounded-md overflow-hidden'>
+      <div className='w-[90%] md:p-container rounded-md overflow-hidden'>
         <img src={Face} id='face' />
       </div>
     </div>

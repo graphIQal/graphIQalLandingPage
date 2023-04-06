@@ -58,7 +58,7 @@ export const Science: React.FC = () => {
         </div>
       </div>
       <div className='w-full flex flex-col items-center align-middle justify-center py-container'>
-        <div className='w-[60%]'>
+        <div className='w-[90%] md:w-[60%]'>
           <ReactMarkdown
             components={ChakraUIRenderer(newTheme)}
             skipHtml

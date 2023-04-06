@@ -22,7 +22,7 @@ import { AiFillEye } from 'react-icons/ai';
 
 const ConnectionSection: React.FC = () => {
   const className =
-    'drop-shadow-xl rounded-lg border border-lining max-h-[65vh] w-auto h-auto';
+    'drop-shadow-lg md:drop-shadow-xl rounded-md md:rounded-lg border border-lining max-h-[65vh] w-auto h-auto';
   const iconClassName = 'h-full w-full';
   const tabs = [
     {
@@ -126,7 +126,7 @@ const ConnectionSection: React.FC = () => {
 
   return (
     <div className='flex flex-col rounded-md'>
-      <div className='w-1/2 text-center mb-5 self-center'>
+      <div className='lg:w-1/2 w-[90%] text-center mb-5 self-center'>
         <Heading className='mb-3'>Unleash the Power of Connections</Heading>
         <div>
           You’re not disorganised, lost, or unfocused. Think of the complexity
