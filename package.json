@@ -1,7 +1,7 @@
 {
-  "name": "graphIQalLandingPage",
+  "name": "product",
   "version": "0.1.0",
-  "homepage": "https://jesseliii.github.io/graphIQalLandingPage",
+  "homepage": "https://graphiqal.github.io/product",
   "private": true,
   "dependencies": {
     "@chakra-ui/icons": "^2.0.17",
