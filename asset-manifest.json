@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/product/static/css/main.07e51932.css",
-    "main.js": "/product/static/js/main.4cedb6ea.js",
+    "main.css": "/product/static/css/main.b693720e.css",
+    "main.js": "/product/static/js/main.85074512.js",
     "static/js/713.830e96f1.chunk.js": "/product/static/js/713.830e96f1.chunk.js",
     "static/css/870.b1af888d.chunk.css": "/product/static/css/870.b1af888d.chunk.css",
     "static/js/870.a2b257a7.chunk.js": "/product/static/js/870.a2b257a7.chunk.js",
@@ -35,8 +35,8 @@
     "static/media/plane.png": "/product/static/media/plane.b32b42b5ebdee16cd4c1.png",
     "static/media/SciencePost.md": "/product/static/media/SciencePost.3318269235d54b4eb6e6.md",
     "index.html": "/product/index.html",
-    "main.07e51932.css.map": "/product/static/css/main.07e51932.css.map",
-    "main.4cedb6ea.js.map": "/product/static/js/main.4cedb6ea.js.map",
+    "main.b693720e.css.map": "/product/static/css/main.b693720e.css.map",
+    "main.85074512.js.map": "/product/static/js/main.85074512.js.map",
     "870.b1af888d.chunk.css.map": "/product/static/css/870.b1af888d.chunk.css.map",
     "870.a2b257a7.chunk.js.map": "/product/static/js/870.a2b257a7.chunk.js.map",
     "262.b1af888d.chunk.css.map": "/product/static/css/262.b1af888d.chunk.css.map",
@@ -44,7 +44,7 @@
     "787.ceba7239.chunk.js.map": "/product/static/js/787.ceba7239.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.07e51932.css",
-    "static/js/main.4cedb6ea.js"
+    "static/css/main.b693720e.css",
+    "static/js/main.85074512.js"
   ]
 }
