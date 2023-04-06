@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.07e51932.css",
-    "main.js": "/static/js/main.92df9f5d.js",
-    "static/js/713.00a87ca8.chunk.js": "/static/js/713.00a87ca8.chunk.js",
+    "main.js": "/static/js/main.6e646943.js",
+    "static/js/713.44f26277.chunk.js": "/static/js/713.44f26277.chunk.js",
     "static/css/870.b1af888d.chunk.css": "/static/css/870.b1af888d.chunk.css",
-    "static/js/870.25706cba.chunk.js": "/static/js/870.25706cba.chunk.js",
+    "static/js/870.8892dbb4.chunk.js": "/static/js/870.8892dbb4.chunk.js",
     "static/css/262.b1af888d.chunk.css": "/static/css/262.b1af888d.chunk.css",
-    "static/js/262.0708419f.chunk.js": "/static/js/262.0708419f.chunk.js",
-    "static/js/787.5a0d31da.chunk.js": "/static/js/787.5a0d31da.chunk.js",
+    "static/js/262.5626de12.chunk.js": "/static/js/262.5626de12.chunk.js",
+    "static/js/787.a2f3a575.chunk.js": "/static/js/787.a2f3a575.chunk.js",
     "static/media/neural_network2.png": "/static/media/neural_network2.55fcf50d1fa9e6b46037.png",
     "static/media/blog_post.png": "/static/media/blog_post.f7af0889e06409473ddc.png",
     "static/media/research_resources.png": "/static/media/research_resources.034f71332a23a8c53ea0.png",
@@ -36,15 +36,15 @@
     "static/media/SciencePost.md": "/static/media/SciencePost.3318269235d54b4eb6e6.md",
     "index.html": "/index.html",
     "main.07e51932.css.map": "/static/css/main.07e51932.css.map",
-    "main.92df9f5d.js.map": "/static/js/main.92df9f5d.js.map",
+    "main.6e646943.js.map": "/static/js/main.6e646943.js.map",
     "870.b1af888d.chunk.css.map": "/static/css/870.b1af888d.chunk.css.map",
-    "870.25706cba.chunk.js.map": "/static/js/870.25706cba.chunk.js.map",
+    "870.8892dbb4.chunk.js.map": "/static/js/870.8892dbb4.chunk.js.map",
     "262.b1af888d.chunk.css.map": "/static/css/262.b1af888d.chunk.css.map",
-    "262.0708419f.chunk.js.map": "/static/js/262.0708419f.chunk.js.map",
-    "787.5a0d31da.chunk.js.map": "/static/js/787.5a0d31da.chunk.js.map"
+    "262.5626de12.chunk.js.map": "/static/js/262.5626de12.chunk.js.map",
+    "787.a2f3a575.chunk.js.map": "/static/js/787.a2f3a575.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.07e51932.css",
-    "static/js/main.92df9f5d.js"
+    "static/js/main.6e646943.js"
   ]
 }
