@@ -32,7 +32,7 @@ export const SidePanel: React.FC<{
       >
         {tabs[selected].description}
       </div>
-      <div className='flex flex-row flex-wrap'>
+      <div className='flex flex-row flex-wrap justify-center md:justify-start'>
         {tabs.map((tab: any, i: number) => (
           <div
             onClick={() => setSelected(i)}

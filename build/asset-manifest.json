@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/product/static/css/main.b693720e.css",
-    "main.js": "/product/static/js/main.85074512.js",
+    "main.js": "/product/static/js/main.cedc2d19.js",
     "static/js/713.830e96f1.chunk.js": "/product/static/js/713.830e96f1.chunk.js",
     "static/css/870.b1af888d.chunk.css": "/product/static/css/870.b1af888d.chunk.css",
     "static/js/870.a2b257a7.chunk.js": "/product/static/js/870.a2b257a7.chunk.js",
@@ -36,7 +36,7 @@
     "static/media/SciencePost.md": "/product/static/media/SciencePost.3318269235d54b4eb6e6.md",
     "index.html": "/product/index.html",
     "main.b693720e.css.map": "/product/static/css/main.b693720e.css.map",
-    "main.85074512.js.map": "/product/static/js/main.85074512.js.map",
+    "main.cedc2d19.js.map": "/product/static/js/main.cedc2d19.js.map",
     "870.b1af888d.chunk.css.map": "/product/static/css/870.b1af888d.chunk.css.map",
     "870.a2b257a7.chunk.js.map": "/product/static/js/870.a2b257a7.chunk.js.map",
     "262.b1af888d.chunk.css.map": "/product/static/css/262.b1af888d.chunk.css.map",
@@ -45,6 +45,6 @@
   },
   "entrypoints": [
     "static/css/main.b693720e.css",
-    "static/js/main.85074512.js"
+    "static/js/main.cedc2d19.js"
   ]
 }

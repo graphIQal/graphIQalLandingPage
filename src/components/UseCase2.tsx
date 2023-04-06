@@ -16,7 +16,7 @@ const UseCase2: React.FC<{
         {/* <CustomTabs selected={false} text='' /> */}
         <img src={src} className='h-full w-auto' />
       </div>
-      <div className='relative h-container ml-5 rounded-md flex flex-col space-y-5 md:w-[50%] whitespace-pre-line text-md'>
+      <div className='relative h-container md:ml-5 rounded-md flex flex-col space-y-5 w-[90%] md:w-[50%] whitespace-pre-line text-md'>
         {description}
       </div>
     </div>
