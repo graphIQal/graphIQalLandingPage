@@ -8,19 +8,19 @@ import Blog from './pages/Blog';
 import { Science } from './pages/Science';
 
 function App() {
-	return (
-		<BrowserRouter basename='https://jesseliii.github.io/graphIQalLandingPage/'>
-			<Routes>
-				<Route path='/' element={<MainPage />} />
-				<Route path='blog' element={<Blog />} />
-				<Route path='science' element={<Science />} />
-			</Routes>
-		</BrowserRouter>
-		// <div className='App'>
-		//   {/* <MainPage /> */}
-		//   <Blog />
-		// </div>
-	);
+  return (
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <Routes>
+        <Route path='/' element={<MainPage />} />
+        <Route path='blog' element={<Blog />} />
+        <Route path='science' element={<Science />} />
+      </Routes>
+    </BrowserRouter>
+    // <div className='App'>
+    //   {/* <MainPage /> */}
+    //   <Blog />
+    // </div>
+  );
 }
 
 export default App;
