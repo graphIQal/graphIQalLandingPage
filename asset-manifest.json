@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/graphIQalLandingPage/static/css/main.07e51932.css",
-    "main.js": "/graphIQalLandingPage/static/js/main.2aa41eb5.js",
+    "main.js": "/graphIQalLandingPage/static/js/main.cc29a9e5.js",
     "static/js/713.44f26277.chunk.js": "/graphIQalLandingPage/static/js/713.44f26277.chunk.js",
     "static/css/870.b1af888d.chunk.css": "/graphIQalLandingPage/static/css/870.b1af888d.chunk.css",
     "static/js/870.8892dbb4.chunk.js": "/graphIQalLandingPage/static/js/870.8892dbb4.chunk.js",
@@ -36,7 +36,7 @@
     "static/media/SciencePost.md": "/graphIQalLandingPage/static/media/SciencePost.3318269235d54b4eb6e6.md",
     "index.html": "/graphIQalLandingPage/index.html",
     "main.07e51932.css.map": "/graphIQalLandingPage/static/css/main.07e51932.css.map",
-    "main.2aa41eb5.js.map": "/graphIQalLandingPage/static/js/main.2aa41eb5.js.map",
+    "main.cc29a9e5.js.map": "/graphIQalLandingPage/static/js/main.cc29a9e5.js.map",
     "870.b1af888d.chunk.css.map": "/graphIQalLandingPage/static/css/870.b1af888d.chunk.css.map",
     "870.8892dbb4.chunk.js.map": "/graphIQalLandingPage/static/js/870.8892dbb4.chunk.js.map",
     "262.b1af888d.chunk.css.map": "/graphIQalLandingPage/static/css/262.b1af888d.chunk.css.map",
@@ -45,6 +45,6 @@
   },
   "entrypoints": [
     "static/css/main.07e51932.css",
-    "static/js/main.2aa41eb5.js"
+    "static/js/main.cc29a9e5.js"
   ]
 }
