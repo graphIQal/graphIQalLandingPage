@@ -7,6 +7,11 @@ import Hackathon from '../assets/images/blog/hackathon.png';
 import Vision from '../assets/images/blog/vision.png';
 import Proverbs from '../assets/images/blog/design_proverbs.png';
 import System from '../assets/images/blog/design_system.png';
+import Science from '../assets/images/blog/science.png';
+
+import Students from '../assets/images/blog/for_students.png';
+
+import Bloggers from '../assets/images/blog/for_bloggers.png';
 import Navbar from '../components/Navbar';
 
 export const blogPosts = [
@@ -58,6 +63,30 @@ export const blogPosts = [
     tags: ['BACKEND'],
     date: 'February 11, 2023',
     img: Cards,
+  },
+  {
+    title: 'The Science Behind graphIQal',
+    url: 'https://medium.com/better-programming/the-science-behind-our-graphiqal-project-850bb9199d98',
+    description: ' ',
+    tags: ['THEORY'],
+    date: 'April 7, 2023',
+    img: Science,
+  },
+  {
+    title: 'Using the Product: graphIQal for Blog Writers',
+    url: 'https://medium.com/better-programming/the-science-behind-our-graphiqal-project-850bb9199d98',
+    description: ' ',
+    tags: ['USE CASE'],
+    date: 'April 7, 2023',
+    img: Bloggers,
+  },
+  {
+    title: 'Using the Product: graphIQal for Students',
+    url: 'https://medium.com/better-programming/the-science-behind-our-graphiqal-project-850bb9199d98',
+    description: ' ',
+    tags: ['USE CASE'],
+    date: 'April 7, 2023',
+    img: Students,
   },
 ];
 
