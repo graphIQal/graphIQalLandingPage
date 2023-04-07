@@ -148,12 +148,12 @@ const ConnectionSection: React.FC = () => {
           tabs={tabs2}
         />
         <UseCase
-          title='Break down Information for Clarity & Focus'
+          title='Break down information for clarity & focus'
           description='Make connections between seemingly unrelated information, uncovering new insights.'
           tabs={tabs3}
         />
         <UseCase
-          title='Accumulation of Knowledge'
+          title='Accumulation of knowledge'
           description='Leverage your unique constellation of knowledge. graphIQal is built to handle the complexity of your projects, designed for speed of input and to pull from your resources seamlessly. '
           tabs={tabs4}
         />
