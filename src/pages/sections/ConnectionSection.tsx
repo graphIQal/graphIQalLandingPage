@@ -33,14 +33,14 @@ const ConnectionSection: React.FC = () => {
 				'Version Control for your work. Explore parallel versions and iterate without fear.',
 		},
 		{
-			title: 'Visualizing',
+			title: 'Visualising',
 			icon: <AiFillEye className={iconClassName} />,
 			img: <img className={className} src={Roadmap} />,
 			description:
 				'Represent and work with information visually, seamlessly translating to the end goal.',
 		},
 		{
-			title: 'Organizing',
+			title: 'Organising',
 			icon: <AiFillFolderOpen className={iconClassName} />,
 			img: <img className={className} src={BlogPost} />,
 			description:
@@ -68,7 +68,7 @@ const ConnectionSection: React.FC = () => {
 			icon: <RiTeamLine className={iconClassName} />,
 			img: <img className={className} src={Meeting} />,
 			description:
-				'Because connections are non-linear, your tasks & documentation can be organized however needed: by Teams, Time, Project, Person, etc. ',
+				'Because connections are non-linear, your tasks & documentation can be organised however needed: by Teams, Time, Project, Person, etc. ',
 		},
 		{
 			title: 'Writing',
