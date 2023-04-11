@@ -22,7 +22,7 @@ import { AiFillEye } from 'react-icons/ai';
 
 const ConnectionSection: React.FC = () => {
 	const className =
-		'drop-shadow-lg md:drop-shadow-xl rounded-md md:rounded-lg border border-lining max-h-[65vh] w-auto h-auto';
+		'drop-shadow-lg md:drop-shadow-xl rounded-md md:rounded-lg border border-lining max-h-[65vh] lg:max-w-[100%] w-auto h-auto';
 	const iconClassName = 'h-full w-full';
 	const tabs = [
 		{

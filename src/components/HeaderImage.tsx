@@ -7,12 +7,12 @@ export const HeaderImage = () => {
 	const left = document.getElementById('left-side');
 
 	const handleMove = (e: any) => {
-		console.log(
-			`${Math.max(
-				((e.clientX / window.innerWidth - 1 / 6) * 3) / 2,
-				0
-			)} %`
-		);
+		// console.log(
+		// 	`${Math.max(
+		// 		((e.clientX / window.innerWidth - 1 / 6) * 3) / 2,
+		// 		0
+		// 	)} %`
+		// );
 
 		if (left)
 			left.style.width = `${
