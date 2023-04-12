@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/product/static/css/main.0d5fd3c1.css",
-    "main.js": "/product/static/js/main.bdc8e2b3.js",
+    "main.css": "/product/static/css/main.921afb99.css",
+    "main.js": "/product/static/js/main.22102e5a.js",
     "static/js/713.830e96f1.chunk.js": "/product/static/js/713.830e96f1.chunk.js",
     "static/css/870.b1af888d.chunk.css": "/product/static/css/870.b1af888d.chunk.css",
     "static/js/870.a2b257a7.chunk.js": "/product/static/js/870.a2b257a7.chunk.js",
@@ -9,11 +9,12 @@
     "static/js/262.6a5d6274.chunk.js": "/product/static/js/262.6a5d6274.chunk.js",
     "static/js/787.ceba7239.chunk.js": "/product/static/js/787.ceba7239.chunk.js",
     "static/media/neural_network2.png": "/product/static/media/neural_network2.55fcf50d1fa9e6b46037.png",
+    "static/media/Header1.png": "/product/static/media/Header1.7c2cf0a1ffdbc91344ce.png",
     "static/media/blog_post.png": "/product/static/media/blog_post.f7af0889e06409473ddc.png",
     "static/media/research_resources.png": "/product/static/media/research_resources.034f71332a23a8c53ea0.png",
     "static/media/version_control.png": "/product/static/media/version_control.a477b0d5a2e396dea69d.png",
+    "static/media/Header2.png": "/product/static/media/Header2.ef14e04ac6d323e2e2b9.png",
     "static/media/meeting_minutes.png": "/product/static/media/meeting_minutes.4b128e3aa8a6abdb676b.png",
-    "static/media/header.png": "/product/static/media/header.0bfc7a4671aa327b8b39.png",
     "static/media/mind2.png": "/product/static/media/mind2.b6f8e301e41da538d945.png",
     "static/media/frustrations.png": "/product/static/media/frustrations.4b02a730a2409d824d4c.png",
     "static/media/box.png": "/product/static/media/box.4e2b2f955535ff81d1d3.png",
@@ -24,19 +25,22 @@
     "static/media/history.png": "/product/static/media/history.4bb7e0d490c0f924a23e.png",
     "static/media/face.png": "/product/static/media/face.b227342c168a160c524d.png",
     "static/media/blog_cards.png": "/product/static/media/blog_cards.ce5cb4f5c18030be641f.png",
+    "static/media/for_students.png": "/product/static/media/for_students.11ff2bb0bdc1f4abd5c6.png",
     "static/media/design_system.png": "/product/static/media/design_system.5fc54bd2c5f108c75226.png",
     "static/media/wiki.png": "/product/static/media/wiki.c7fff462b1b99141ae58.png",
     "static/media/hackathon.png": "/product/static/media/hackathon.164b84a8d14f18e618d7.png",
     "static/media/tools.png": "/product/static/media/tools.bea4417ed308a3fd77a9.png",
+    "static/media/for_bloggers.png": "/product/static/media/for_bloggers.28771ab1c6594bd78b65.png",
     "static/media/design_proverbs.png": "/product/static/media/design_proverbs.25d7f28c553a40ad9c65.png",
+    "static/media/science.png": "/product/static/media/science.beb69c70ea4154ce9d9d.png",
     "static/media/vision.png": "/product/static/media/vision.452044317f062c8ce36f.png",
     "static/media/contents.png": "/product/static/media/contents.4353a69c6f87e6bd5d95.png",
     "static/media/lightbulb.png": "/product/static/media/lightbulb.956e0f951efc4f28abea.png",
     "static/media/plane.png": "/product/static/media/plane.b32b42b5ebdee16cd4c1.png",
     "static/media/SciencePost.md": "/product/static/media/SciencePost.3318269235d54b4eb6e6.md",
     "index.html": "/product/index.html",
-    "main.0d5fd3c1.css.map": "/product/static/css/main.0d5fd3c1.css.map",
-    "main.bdc8e2b3.js.map": "/product/static/js/main.bdc8e2b3.js.map",
+    "main.921afb99.css.map": "/product/static/css/main.921afb99.css.map",
+    "main.22102e5a.js.map": "/product/static/js/main.22102e5a.js.map",
     "870.b1af888d.chunk.css.map": "/product/static/css/870.b1af888d.chunk.css.map",
     "870.a2b257a7.chunk.js.map": "/product/static/js/870.a2b257a7.chunk.js.map",
     "262.b1af888d.chunk.css.map": "/product/static/css/262.b1af888d.chunk.css.map",
@@ -44,7 +48,7 @@
     "787.ceba7239.chunk.js.map": "/product/static/js/787.ceba7239.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0d5fd3c1.css",
-    "static/js/main.bdc8e2b3.js"
+    "static/css/main.921afb99.css",
+    "static/js/main.22102e5a.js"
   ]
 }
