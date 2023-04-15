@@ -1,29 +1,33 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import Header1 from '../assets/images/figmas/Header1.png';
 import Header2 from '../assets/images/figmas/Header2.png';
 
 export const HeaderImage = () => {
-	const left = document.getElementById('left-side');
+	useEffect(() => {
+		const left = document.getElementById('left-side');
 
-	const handleMove = (e: any) => {
-		// console.log(
-		// 	`${Math.max(
-		// 		((e.clientX / window.innerWidth - 1 / 6) * 3) / 2,
-		// 		0
-		// 	)} %`
-		// );
+		const handleMove = (e: any) => {
+			console.log(
+				`${Math.max(
+					((e.clientX / window.innerWidth - 1 / 6) * 3) / 2,
+					0
+				)} %`
+			);
+			console.log(left);
+			if (left)
+				left.style.width = `${
+					Math.max(
+						((e.clientX / window.innerWidth - 1 / 6) * 3) / 2,
+						0
+					) * 100
+				}%`;
+		};
 
-		if (left)
-			left.style.width = `${
-				Math.max(((e.clientX / window.innerWidth - 1 / 6) * 3) / 2, 0) *
-				100
-			}%`;
-	};
+		document.onmousemove = (e) => handleMove(e);
 
-	document.onmousemove = (e) => handleMove(e);
-
-	document.ontouchmove = (e) => handleMove(e.touches[0]);
+		document.ontouchmove = (e) => handleMove(e.touches[0]);
+	}, []);
 
 	return (
 		<div className='w-full mb-3 relative'>
