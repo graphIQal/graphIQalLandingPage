@@ -121,8 +121,31 @@ export const GetContent = (
               type='email'
               name='email'
               placeholder='Email Address'
-              className='mb-3'
+              className='mb-8'
             />
+            <FormControl isRequired={false}>
+              <div className='mb-3'>
+                What Best Describes You? (Writer, Researcher, Learner, etc.)
+                (optional)
+              </div>
+              <Input
+                id='role'
+                type='text'
+                name='role'
+                placeholder=''
+                className='mb-3'
+              />
+              <div className='mb-3'>
+                What do you want to use graphIQal for? (optional)
+              </div>
+              <Input
+                id='use'
+                type='text'
+                name='use'
+                placeholder=''
+                className='mb-3'
+              />
+            </FormControl>
           </ModalBody>
 
           <ModalFooter>
