@@ -46,7 +46,7 @@ _Our brain thinks in terms of connections._
 
 #
 
-The process of making these connections in our brain is way more powerful than we might realise.
+The process of making these connections in our brain is way more powerful than we might realize.
 
 #
 

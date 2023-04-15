@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/product/static/css/main.0d5fd3c1.css",
-    "main.js": "/product/static/js/main.29b9fee8.js",
+    "main.css": "/product/static/css/main.36ddef27.css",
+    "main.js": "/product/static/js/main.306ba017.js",
     "static/js/713.830e96f1.chunk.js": "/product/static/js/713.830e96f1.chunk.js",
     "static/css/870.b1af888d.chunk.css": "/product/static/css/870.b1af888d.chunk.css",
     "static/js/870.a2b257a7.chunk.js": "/product/static/js/870.a2b257a7.chunk.js",
@@ -9,11 +9,12 @@
     "static/js/262.6a5d6274.chunk.js": "/product/static/js/262.6a5d6274.chunk.js",
     "static/js/787.ceba7239.chunk.js": "/product/static/js/787.ceba7239.chunk.js",
     "static/media/neural_network2.png": "/product/static/media/neural_network2.55fcf50d1fa9e6b46037.png",
+    "static/media/Header1.png": "/product/static/media/Header1.7c2cf0a1ffdbc91344ce.png",
     "static/media/blog_post.png": "/product/static/media/blog_post.f7af0889e06409473ddc.png",
     "static/media/research_resources.png": "/product/static/media/research_resources.034f71332a23a8c53ea0.png",
     "static/media/version_control.png": "/product/static/media/version_control.a477b0d5a2e396dea69d.png",
+    "static/media/Header2.png": "/product/static/media/Header2.ef14e04ac6d323e2e2b9.png",
     "static/media/meeting_minutes.png": "/product/static/media/meeting_minutes.4b128e3aa8a6abdb676b.png",
-    "static/media/header.png": "/product/static/media/header.0bfc7a4671aa327b8b39.png",
     "static/media/mind2.png": "/product/static/media/mind2.b6f8e301e41da538d945.png",
     "static/media/frustrations.png": "/product/static/media/frustrations.4b02a730a2409d824d4c.png",
     "static/media/box.png": "/product/static/media/box.4e2b2f955535ff81d1d3.png",
@@ -35,8 +36,8 @@
     "static/media/plane.png": "/product/static/media/plane.b32b42b5ebdee16cd4c1.png",
     "static/media/SciencePost.md": "/product/static/media/SciencePost.3318269235d54b4eb6e6.md",
     "index.html": "/product/index.html",
-    "main.0d5fd3c1.css.map": "/product/static/css/main.0d5fd3c1.css.map",
-    "main.29b9fee8.js.map": "/product/static/js/main.29b9fee8.js.map",
+    "main.36ddef27.css.map": "/product/static/css/main.36ddef27.css.map",
+    "main.306ba017.js.map": "/product/static/js/main.306ba017.js.map",
     "870.b1af888d.chunk.css.map": "/product/static/css/870.b1af888d.chunk.css.map",
     "870.a2b257a7.chunk.js.map": "/product/static/js/870.a2b257a7.chunk.js.map",
     "262.b1af888d.chunk.css.map": "/product/static/css/262.b1af888d.chunk.css.map",
@@ -44,7 +45,7 @@
     "787.ceba7239.chunk.js.map": "/product/static/js/787.ceba7239.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0d5fd3c1.css",
-    "static/js/main.29b9fee8.js"
+    "static/css/main.36ddef27.css",
+    "static/js/main.306ba017.js"
   ]
 }
